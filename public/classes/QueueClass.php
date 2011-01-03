@@ -28,7 +28,7 @@ class Queue {
 			}
 		}
 		$this->active = 0;
-        return false;
+        return "0";
 	}
 	public function add_array($links) {
 		if (!empty($links)) {

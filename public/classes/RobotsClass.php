@@ -5,13 +5,13 @@ class Robots {
 	private $contents;
 	public $rules = array('+','-');
 	private $browser;
-	public function __construct($url,$browser) {
-		$parser = parse_url($url);
-		$this->host = $parser['host'];
-		$this->browser = $browser;
-		$http = new HttpRequest;
-		$http->get("http://" . $this->host . "/robots.txt");
-		$raw_text = $http->content;
+	public function __construct() {
+        $this->browser = spiderel::$config->get('agent');
+        $robots_file = spiderel::$config->get('robots');
+        $f = fopen($robots_file,"r");
+        $contents = fread($f,filesize($robots_file));
+        fclose($f);
+		$raw_text = $contents;
 		if($raw_text) {
 			$this->contents =  $raw_text;
 		}
@@ -20,30 +20,33 @@ class Robots {
 	}
 
 	private function create_rules() {
+        $user_agent = $this->browser;
 		$lines = explode("\n",$this->contents);
 		$permissions = array();
+        $permissions['*'] = "*";
 		foreach ($lines as $line) {
 			if(strpos(trim($line), '#') === 0) {
 				continue;
 			} 
 			else {
-				list($key,$value) = explode(':',trim($line));
-				switch(strtolower($key)) {
-					case "user-agent": 
-						$user_agent = trim($value);
-						$permissions[$user_agent] = array('+' => array(),'-' => array());
-						break;
-					case "allow";
-						array_push($permissions[$user_agent]['+'],$value); 
-					case "disallow":
-						array_push($permissions[$user_agent]['-'], $value);
-				}					
+				if(strpos($line,":")) {
+                    list($key,$value) = explode(':',trim($line));
+    				switch(strtolower($key)) {
+    					case "user-agent": 
+				    		$user_agent = trim($value);
+			    			$permissions[$user_agent] = array('+' => array(),'-' => array());
+	    					break;
+    					case "allow";
+		    				array_push($permissions[$user_agent]['+'],$value); 
+    					case "disallow":
+					    	array_push($permissions[$user_agent]['-'], $value);
+				    }					
+                }
 			}
 		}
 		if(isset($permissions[$user_agent])) {
 			$this->rules = $permissions[$user_agent];
 		}
-		else {	$this->rules = $permissions['*']; }
 	}
 	public function isAllowed($path) {
 		$isallowed = true;

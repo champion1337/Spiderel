@@ -4,8 +4,9 @@ class Page {
 	private $url;
 	private $content;
 	private $text;
-  private $_id;
-  public $status = true;
+    private $_id;
+    public $status = true;
+
 	function strip_html_tags( $text )
     {
         $text = preg_replace(
@@ -37,42 +38,41 @@ class Page {
         $text );
         return strip_tags( $text );
     } 
-  function __construct($init) {
-    $this->url = $init;
-    $http = new HttpRequest();
-    if($http->get($init)) {
-      $raw_text = $http->content;
-    	$this->content = $raw_text ;
-      if(preg_match( '@<meta\s+http-equiv="Content-Type"\s+content="([\w/]+)(;\s+charset=([^\s"]+))?@i',$raw_text, $matches )) {
-        $encoding = $matches[3];
-          if (!empty($encoding)) {
-            if ($encoding != "utf-8") {
-              echo "Convertin";
-                /* Convert to UTF-8 before doing anything else */
-                $utf8_text = iconv( $encoding, "utf-8", $raw_text );        
-                /* Strip HTML tags and invisible text */
-                $utf8_text = $this->strip_html_tags( $utf8_text ); 
-                /* Decode HTML entities */
-                $utf8_text = html_entity_decode( $utf8_text, ENT_QUOTES, "UTF-8" ); 
-     	    	    $raw_text = $utf8_text;
-         	    	$this->text = $raw_text; 
-             }                    
-             else {
-               $this->text = html_entity_decode($this->strip_html_tags($raw_text));
-              }
-          }
-          else {
-            $this->text = html_entity_decode($this->strip_html_tags($raw_text));
-          }
-          $this->text = preg_replace('/\s+/', ' ',$this->text);
+    function __construct($init) {
+        $this->url = $init;
+        $http = new HttpRequest();
+        if($http->get($init)) {
+            $raw_text = $http->content;
+        	$this->content = $raw_text ;
+            if(preg_match( '@<meta\s+http-equiv="Content-Type"\s+content="([\w/]+)(;\s+charset=([^\s"]+))?@i',$raw_text, $matches )) {
+                $encoding = strtolower($matches[3]);
+                if (!empty($encoding)) {
+                    if ($encoding != "utf-8") {
+                        /* Convert to UTF-8 before doing anything else */
+                        $utf8_text = iconv( $encoding, "utf-8", $raw_text );        
+                        /* Strip HTML tags and invisible text */
+                        $utf8_text = $this->strip_html_tags( $utf8_text ); 
+                        /* Decode HTML entities */
+                        $utf8_text = html_entity_decode( $utf8_text  ); 
+         	    	    $raw_text = $utf8_text;
+             	    	$this->text = $raw_text; 
+                    }                    
+                    else {
+                        $this->text = html_entity_decode($this->strip_html_tags($raw_text));
+                    }
+                }
+                else {
+                    $this->text = html_entity_decode($this->strip_html_tags($raw_text));
+                }
+                $this->title = preg_match('!<title>(.*?)</title>!i', $raw_text, $matches) ? $matches[1] : '';
+                $this->text = preg_replace('/\s+/', ' ',$this->text);
+            }
+            else {
+                $this->status = false;
+            }  
+        } else {
+      	    $this->status = false;
         }
-        else {
-          $this->status = false;
-        }
-      
-    } else {
-  	  $this->status = false;
-    }
 	}
 	public function get_url() {
 		return $this->url;
@@ -100,7 +100,7 @@ class Page {
         `content`
         )
         VALUES (
-        '" . $this->url . "', 'test title', '" . mysql_real_escape_string($this->text) . " '
+        '" . $this->url . "', '" . $this->title . "', '" . mysql_real_escape_string($this->text) . " '
         );
         ";
         mysql_query($query) or spiderel::add_error("failed to execute query " . $query . " ! the mysql server returned " . mysql_error() . " .i ");
@@ -112,6 +112,7 @@ class Page {
     }
 
     private function _identify_url($url,$base_url,$current_url) {
+        //identify the URL base that needs to be followed relative to subdomain/directories
         if ($base_url != $current_url) {
             $path = str_replace($base_url,"",$current_url);
             $url_dirs = explode("/",$url);
@@ -137,32 +138,32 @@ class Page {
 
 
 	private function _filter_links($links) {
-		$filtered = array();
+		$filtered = array();//array for checked links
 		foreach ($links as $link) {
-            if (strpos($link, "#") !== false ) {
+            if (strpos($link, "#") !== false ) { //remove #
                 $link = strstr($link, '#', true);
             }
             $push = 1;
             $isUrl = 0;
             if (strpos($link, "javascript:") !== false || (strpos($link, "http://") !== false)) {
                 $push = 0;
-            }
-            $patternSub = "http://(([-\w\.])?)+(" . spiderel::get_config('domain')  . ")+(/([\w/_\.]*(\?\S+)?)?)?";
-            $patternNoSub = "http://+(" . spiderel::get_config('domain') . ")+(/([\w/_\.]*(\?\S+)?)?)?";
-            if (spiderel::get_config('follow_sub_domain')) {
-                $pattern = $patternSub;
-            } else {
-                $pattern = $patternNoSub;
-            }
+            } //the links is for  javascript
             if (strpos($link, "http://") !== false) {
-                if (preg_match('/$pattern/', $link)) {
-                    $isUrl = 1;
+                $isUrl = 1;
+                $domain = spiderel::get_config('domain');
+                $www_domain = "www." . $domain; 
+                $parse_url = parse_url($link); 
+                if ($parse_url['host'] == $domain || (strpos($www_domain,$parse_url['host']) !== false )) {
                     $push = 1;
-                } else {
-                    $push = 0;
+                }
+                elseif(
+                    (spiderel::get_config('follow_sub_domain') == "yes") &&
+                    (strpos($domain, $link) !== false)
+                ) {
+                    $push = 1;
                 }
             }
-            if ($push == 1) {
+            if ($push == 1) { 
                 if ($isUrl == 0) {
                     //echo $link . "<br>";
                     //echo spiderel::get_config('url') . "<br>";
@@ -170,7 +171,6 @@ class Page {
                     $link = $this->_identify_url($link,spiderel::get_config('url'),$this->url);
                 }
 	 			array_push($filtered, $link);
-
 			}
 		}
 		return $filtered;

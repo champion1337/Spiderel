@@ -1,6 +1,6 @@
 <?php
 
-class HttpRequest     
+class HttpRequest
     {
     private $host;
     private $path;

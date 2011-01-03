@@ -77,10 +77,11 @@ class Pagerank
     //print_r($this->_links);
     echo "<br><br>";
     $this->_compute_ids();
-    foreach ($this->_graph as $graph) {
-      print_r($graph);
-      echo "<br>";
+    $pagerank = $this->_compute_pagerank($this->_graph);
+    foreach ($pagerank as $key => $value) {
+        $sql = "UPDATE links SET pagerank = '" . $value . "' WHERE id='" . $key . "'";
+        mysql_query($sql);
     }
-    print_r($this->_compute_pagerank($this->_graph));
+
   }
 }
