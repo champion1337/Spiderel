@@ -7,7 +7,10 @@ class Controller {
     public $config;
     function __construct($model, $controller, $action) {
         session_start();
-        $this->config = new config; 
+        $lock_file = ROOT . DS . "isntall.lock";
+        if(!is_file($lock_file)) {
+            $this->config = new config; 
+        }
         $this->_controller = $controller;
         $this->_action = $action;
         $this->_template = new Template($controller,$action);
@@ -15,7 +18,6 @@ class Controller {
             $this->set('notice',$_SESSION['notice']);
             unset($_SESSION['notice']);
         }
-        $this->_before();
     }
 
     function set($name,$value) {
