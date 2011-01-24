@@ -6,7 +6,7 @@ class Error
         array_push($this->_errors, $error);
     }
     public function eexit($error) {
-        print_r($this->errors);
+        print_r($this->_errors);
         echo "A fatal error has occured: " . $error;
         exit(0);
     }

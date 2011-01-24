@@ -13,7 +13,7 @@ function callHook() {
         $controller = "spiderel";
     }
     array_shift($urlArray);
-    if(empty($urlArray)) { //if no action is defined, use the index action
+    if(empty($urlArray[0])) { //if no action is defined, use the index action
         $action = "index"; 
     }
     else {
