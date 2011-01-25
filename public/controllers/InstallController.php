@@ -36,7 +36,7 @@ class InstallController extends Controller
             ';
             fwrite($f, $mysql_data); //write config/mysql.php
             spiderel::init_db();
-            if (!$this->config->create_tables()) {
+            if (!spiderel::create_tables()) {
                 $this->add_notice("Unable to create tables");
                 $this->redirect("install", "index", 0);
             }
@@ -46,7 +46,8 @@ class InstallController extends Controller
         }
     }
     public function robots() {
-    
+        $path_robots = ROOT . DS . "robots.txt";
+        $this->set("path_robots", $path_robots);
     }
     public function check_robots() {
         if(!isset( $_POST['skip'])) {
@@ -55,6 +56,7 @@ class InstallController extends Controller
                 $this->redirect("install","robots", 0);
             }
             else {
+                $this->config = new config;
                 $this->config->set('path_robots_txt',$_POST['path']);
                 //add path to robots file to db
                 $this->redirect("install","admin","0");
@@ -68,6 +70,7 @@ class InstallController extends Controller
     
     }
     public function add_admin() {
+        $this->config = new config;
         $user = $_POST['user'];
         $password = $_POST['password'];
         //add user and pass to db

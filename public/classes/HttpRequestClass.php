@@ -4,9 +4,11 @@ class HttpRequest
     {
     private $host;
     private $path;
+    private $port; 
     private $get;
     private $error;
     private $header;
+
     public $content;
     private $status;
     private $content_type;
@@ -15,8 +17,16 @@ class HttpRequest
         $parse = parse_url($url);
         $this->host = $parse['host'];
         $this->path = $parse['path'];
+        if( isset( $parse['port'] ) )
+        {
+            $this->port = $parse['port'];
+        }
+        else
+        {
+            $this->port = "80";
+        }
         if(isset($parse['query'])) { $this->get = $parse['query']; }
-        $fp = fsockopen($this->host,80, $errno,$errstr,30);
+        $fp = fsockopen($this->host,$this->port, $errno,$errstr,30);
 		if(!$fp)
         {
             $this->error = "$url -> $errno $errstr";

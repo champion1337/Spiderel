@@ -73,4 +73,21 @@ class spiderel
         mysql_connect($mysql_host, $mysql_user, $mysql_password) or die("Database connect failed");
         mysql_select_db($mysql_database) or die("Database load failed");
     }
+    static public function create_tables()
+    {
+        $tables_file = ROOT . DS . "config" . DS . "tables.sql";
+        $f = fopen( $tables_file, "r");
+        $query = fread( $f, filesize( $tables_file) ) ;
+        fclose( $f );
+
+        $sql = explode(";",file_get_contents($tables_file));// 
+        $errors = 0;
+        foreach($sql as $query)
+        {
+            mysql_query($query) or $errors = 1;;
+        }
+        if( $errors == 0 ) return true;
+        else return false;
+    }
+
 }		

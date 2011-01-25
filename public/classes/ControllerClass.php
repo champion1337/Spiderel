@@ -7,7 +7,7 @@ class Controller {
     public $config;
     function __construct($model, $controller, $action) {
         session_start();
-        $lock_file = ROOT . DS . "isntall.lock";
+        $lock_file = ROOT . DS . "install.lock";
         if(!is_file($lock_file)) {
             $this->config = new config; 
         }

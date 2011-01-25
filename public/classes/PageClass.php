@@ -81,7 +81,6 @@ class Page {
 		$regexp = "<a\s[^>]*href=(\"??)([^\" >]*?)\\1[^>]*>(.*)<\/a>"; 
 		if(preg_match_all("/$regexp/siU", $this->content, $matches)) { 
 			$filtered = $this->_filter_links($matches[2]);
-            //print_r($filtered);
 			return $filtered;
 		}
 		else return false;
@@ -112,8 +111,13 @@ class Page {
     }
 
     private function _identify_url($url,$base_url,$current_url) {
-        //identify the URL base that needs to be followed relative to subdomain/directories
-        if ($base_url != $current_url) {
+        $parse_base = parse_url( $base_url );
+        $parse_current = parse_url( $current_url );
+        $domain_base = $parse_base['host'];
+        $domain_current = $parse_current['host'];
+        if( strpos( $domain_current, $domain_base ) === false )
+        {
+            //identify the URL base that needs to be followed relative to subdomain/directories
             $path = str_replace($base_url,"",$current_url);
             $url_dirs = explode("/",$url);
             $base_dirs = explode("/",$path);
@@ -134,9 +138,6 @@ class Page {
         }
         else { return $base_url . $url; } 
     }
- 
-
-
 	private function _filter_links($links) {
 		$filtered = array();//array for checked links
 		foreach ($links as $link) {
@@ -145,10 +146,10 @@ class Page {
             }
             $push = 1;
             $isUrl = 0;
-            if (strpos($link, "javascript:") !== false || (strpos($link, "http://") !== false)) {
+            if (strpos($link, "javascript:") !== false || (strpos($link, "://") !== false)) {            
                 $push = 0;
-            } //the links is for  javascript
-            if (strpos($link, "http://") !== false) {
+            } //the links are for  javascript
+            if (strpos($link, "://") !== false) {
                 $isUrl = 1;
                 $domain = spiderel::get_config('domain');
                 $www_domain = "www." . $domain; 
