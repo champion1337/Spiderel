@@ -74,7 +74,7 @@ class Pagerank
   }
 
   public function calculate() {
-    set_time_limit(' 600 ');
+    set_time_limit(50 );
     //print_r($this->_links);
     echo "<br><br>";
     $this->_compute_ids();

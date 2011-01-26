@@ -28,6 +28,8 @@ class SpiderelController extends Controller
         spiderel::$config->set('robots', $robots);
         spiderel::$config->set('agent',$agent);
         spiderel::$config->set("follow_sub_domain",$subdomains);
+        $parse = parse_url( $start_url );
+        spiderel::$config->set("domain", $parse['host']);
         spiderel::$config->save_config();
         spiderel::init();
 

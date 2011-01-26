@@ -45,7 +45,7 @@ class Page {
             $raw_text = $http->content;
         	$this->content = $raw_text ;
             if(preg_match( '@<meta\s+http-equiv="Content-Type"\s+content="([\w/]+)(;\s+charset=([^\s"]+))?@i',$raw_text, $matches )) {
-                $encoding = strtolower($matches[3]);
+                if(isset( $matches[3])) { $encoding = strtolower($matches[3]); }
                 if (!empty($encoding)) {
                     if ($encoding != "utf-8") {
                         /* Convert to UTF-8 before doing anything else */
@@ -111,13 +111,9 @@ class Page {
     }
 
     private function _identify_url($url,$base_url,$current_url) {
-        $parse_base = parse_url( $base_url );
-        $parse_current = parse_url( $current_url );
-        $domain_base = $parse_base['host'];
-        $domain_current = $parse_current['host'];
-        if( strpos( $domain_current, $domain_base ) === false )
+        //identify the URL base that needs to be followed relative to subdomain/directories
+        if ( $base_url != $current_url )
         {
-            //identify the URL base that needs to be followed relative to subdomain/directories
             $path = str_replace($base_url,"",$current_url);
             $url_dirs = explode("/",$url);
             $base_dirs = explode("/",$path);
@@ -136,7 +132,7 @@ class Page {
             }
             return $path;
         }
-        else { return $base_url . $url; } 
+        else { return $base_url . $url; }
     }
 	private function _filter_links($links) {
 		$filtered = array();//array for checked links
@@ -146,10 +142,11 @@ class Page {
             }
             $push = 1;
             $isUrl = 0;
-            if (strpos($link, "javascript:") !== false || (strpos($link, "://") !== false)) {            
+            if (strpos($link, "javascript:") !== false) {
                 $push = 0;
             } //the links are for  javascript
-            if (strpos($link, "://") !== false) {
+            if (strpos($link, '://') !== false) {
+                $push = 0;
                 $isUrl = 1;
                 $domain = spiderel::get_config('domain');
                 $www_domain = "www." . $domain; 
@@ -165,8 +162,9 @@ class Page {
                 }
             }
             if ($push == 1) { 
+                
                 if ($isUrl == 0) {
-                    //echo $link . "<br>";
+                   // echo $link . "<br>";
                     //echo spiderel::get_config('url') . "<br>";
                     //echo $this->url . "<br>";
                     $link = $this->_identify_url($link,spiderel::get_config('url'),$this->url);
