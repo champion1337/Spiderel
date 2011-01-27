@@ -8349,3 +8349,651 @@
 [Thu Jan 27 00:33:48 2011] [error] [client 127.0.1.1] PHP   6. spiderel::crawl() /home/atantros/projects/spider/public/controllers/SpiderelController.php:36, referer: http://spider/index.php
 [Thu Jan 27 00:33:48 2011] [error] [client 127.0.1.1] PHP   7. Page->__construct() /home/atantros/projects/spider/public/classes/spiderelClass.php:44, referer: http://spider/index.php
 [Thu Jan 27 00:33:48 2011] [error] [client 127.0.1.1] PHP   8. HttpRequest->get() /home/atantros/projects/spider/public/classes/PageClass.php:44, referer: http://spider/index.php
+[Thu Jan 27 09:40:56 2011] [error] [client 127.0.1.1] PHP Notice:  Undefined variable: query in /home/atantros/projects/spider/public/controllers/SearchController.php on line 15, referer: http://spider/index.php?url=search
+[Thu Jan 27 09:40:56 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=search
+[Thu Jan 27 09:40:56 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=search
+[Thu Jan 27 09:40:56 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=search
+[Thu Jan 27 09:40:56 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:60, referer: http://spider/index.php?url=search
+[Thu Jan 27 09:40:56 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:45, referer: http://spider/index.php?url=search
+[Thu Jan 27 09:40:56 2011] [error] [client 127.0.1.1] PHP   5. SearchController->go() /home/atantros/projects/spider/public/bootstrap.php:0, referer: http://spider/index.php?url=search
+[Thu Jan 27 09:40:56 2011] [error] [client 127.0.1.1] PHP Notice:  Undefined variable: type in /home/atantros/projects/spider/public/controllers/SearchController.php on line 16, referer: http://spider/index.php?url=search
+[Thu Jan 27 09:40:56 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=search
+[Thu Jan 27 09:40:56 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=search
+[Thu Jan 27 09:40:56 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=search
+[Thu Jan 27 09:40:56 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:60, referer: http://spider/index.php?url=search
+[Thu Jan 27 09:40:56 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:45, referer: http://spider/index.php?url=search
+[Thu Jan 27 09:40:56 2011] [error] [client 127.0.1.1] PHP   5. SearchController->go() /home/atantros/projects/spider/public/bootstrap.php:0, referer: http://spider/index.php?url=search
+[Thu Jan 27 09:40:59 2011] [error] [client 127.0.1.1] File does not exist: /home/atantros/projects/spider/public/favicon.ico
+[Thu Jan 27 09:41:02 2011] [error] [client 127.0.1.1] PHP Notice:  Undefined variable: query in /home/atantros/projects/spider/public/controllers/SearchController.php on line 15, referer: http://spider/index.php?url=search
+[Thu Jan 27 09:41:02 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=search
+[Thu Jan 27 09:41:02 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=search
+[Thu Jan 27 09:41:02 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=search
+[Thu Jan 27 09:41:02 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:60, referer: http://spider/index.php?url=search
+[Thu Jan 27 09:41:02 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:45, referer: http://spider/index.php?url=search
+[Thu Jan 27 09:41:02 2011] [error] [client 127.0.1.1] PHP   5. SearchController->go() /home/atantros/projects/spider/public/bootstrap.php:0, referer: http://spider/index.php?url=search
+[Thu Jan 27 09:41:02 2011] [error] [client 127.0.1.1] PHP Notice:  Undefined variable: type in /home/atantros/projects/spider/public/controllers/SearchController.php on line 16, referer: http://spider/index.php?url=search
+[Thu Jan 27 09:41:02 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=search
+[Thu Jan 27 09:41:02 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=search
+[Thu Jan 27 09:41:02 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=search
+[Thu Jan 27 09:41:02 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:60, referer: http://spider/index.php?url=search
+[Thu Jan 27 09:41:02 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:45, referer: http://spider/index.php?url=search
+[Thu Jan 27 09:41:02 2011] [error] [client 127.0.1.1] PHP   5. SearchController->go() /home/atantros/projects/spider/public/bootstrap.php:0, referer: http://spider/index.php?url=search
+[Thu Jan 27 10:30:10 2011] [error] [client 127.0.1.1] PHP Notice:  Undefined variable: string in /home/atantros/projects/spider/public/views/AZ/index.php on line 2
+[Thu Jan 27 10:30:10 2011] [error] [client 127.0.1.1] PHP Stack trace:
+[Thu Jan 27 10:30:10 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0
+[Thu Jan 27 10:30:10 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9
+[Thu Jan 27 10:30:10 2011] [error] [client 127.0.1.1] PHP   3. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0
+[Thu Jan 27 10:30:10 2011] [error] [client 127.0.1.1] PHP   4. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:31
+[Thu Jan 27 10:30:10 2011] [error] [client 127.0.1.1] PHP   5. include() /home/atantros/projects/spider/public/classes/TemplateClass.php:27
+[Thu Jan 27 10:30:10 2011] [error] [client 127.0.1.1] PHP Warning:  Invalid argument supplied for foreach() in /home/atantros/projects/spider/public/views/AZ/index.php on line 2
+[Thu Jan 27 10:30:10 2011] [error] [client 127.0.1.1] PHP Stack trace:
+[Thu Jan 27 10:30:10 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0
+[Thu Jan 27 10:30:10 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9
+[Thu Jan 27 10:30:10 2011] [error] [client 127.0.1.1] PHP   3. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0
+[Thu Jan 27 10:30:10 2011] [error] [client 127.0.1.1] PHP   4. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:31
+[Thu Jan 27 10:30:10 2011] [error] [client 127.0.1.1] PHP   5. include() /home/atantros/projects/spider/public/classes/TemplateClass.php:27
+[Thu Jan 27 10:30:27 2011] [error] [client 127.0.1.1] PHP Warning:  Invalid argument supplied for foreach() in /home/atantros/projects/spider/public/views/AZ/index.php on line 2
+[Thu Jan 27 10:30:27 2011] [error] [client 127.0.1.1] PHP Stack trace:
+[Thu Jan 27 10:30:27 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0
+[Thu Jan 27 10:30:27 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9
+[Thu Jan 27 10:30:27 2011] [error] [client 127.0.1.1] PHP   3. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0
+[Thu Jan 27 10:30:27 2011] [error] [client 127.0.1.1] PHP   4. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:31
+[Thu Jan 27 10:30:27 2011] [error] [client 127.0.1.1] PHP   5. include() /home/atantros/projects/spider/public/classes/TemplateClass.php:27
+[Thu Jan 27 10:30:43 2011] [error] [client 127.0.1.1] PHP Warning:  Invalid argument supplied for foreach() in /home/atantros/projects/spider/public/views/AZ/index.php on line 2
+[Thu Jan 27 10:30:43 2011] [error] [client 127.0.1.1] PHP Stack trace:
+[Thu Jan 27 10:30:43 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0
+[Thu Jan 27 10:30:43 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9
+[Thu Jan 27 10:30:43 2011] [error] [client 127.0.1.1] PHP   3. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0
+[Thu Jan 27 10:30:43 2011] [error] [client 127.0.1.1] PHP   4. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:31
+[Thu Jan 27 10:30:43 2011] [error] [client 127.0.1.1] PHP   5. include() /home/atantros/projects/spider/public/classes/TemplateClass.php:27
+[Thu Jan 27 10:30:44 2011] [error] [client 127.0.1.1] PHP Warning:  Invalid argument supplied for foreach() in /home/atantros/projects/spider/public/views/AZ/index.php on line 2
+[Thu Jan 27 10:30:44 2011] [error] [client 127.0.1.1] PHP Stack trace:
+[Thu Jan 27 10:30:44 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0
+[Thu Jan 27 10:30:44 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9
+[Thu Jan 27 10:30:44 2011] [error] [client 127.0.1.1] PHP   3. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0
+[Thu Jan 27 10:30:44 2011] [error] [client 127.0.1.1] PHP   4. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:31
+[Thu Jan 27 10:30:44 2011] [error] [client 127.0.1.1] PHP   5. include() /home/atantros/projects/spider/public/classes/TemplateClass.php:27
+[Thu Jan 27 10:30:44 2011] [error] [client 127.0.1.1] PHP Warning:  Invalid argument supplied for foreach() in /home/atantros/projects/spider/public/views/AZ/index.php on line 2
+[Thu Jan 27 10:30:44 2011] [error] [client 127.0.1.1] PHP Stack trace:
+[Thu Jan 27 10:30:44 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0
+[Thu Jan 27 10:30:44 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9
+[Thu Jan 27 10:30:44 2011] [error] [client 127.0.1.1] PHP   3. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0
+[Thu Jan 27 10:30:44 2011] [error] [client 127.0.1.1] PHP   4. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:31
+[Thu Jan 27 10:30:44 2011] [error] [client 127.0.1.1] PHP   5. include() /home/atantros/projects/spider/public/classes/TemplateClass.php:27
+[Thu Jan 27 10:30:45 2011] [error] [client 127.0.1.1] PHP Warning:  Invalid argument supplied for foreach() in /home/atantros/projects/spider/public/views/AZ/index.php on line 2
+[Thu Jan 27 10:30:45 2011] [error] [client 127.0.1.1] PHP Stack trace:
+[Thu Jan 27 10:30:45 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0
+[Thu Jan 27 10:30:45 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9
+[Thu Jan 27 10:30:45 2011] [error] [client 127.0.1.1] PHP   3. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0
+[Thu Jan 27 10:30:45 2011] [error] [client 127.0.1.1] PHP   4. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:31
+[Thu Jan 27 10:30:45 2011] [error] [client 127.0.1.1] PHP   5. include() /home/atantros/projects/spider/public/classes/TemplateClass.php:27
+[Thu Jan 27 10:30:45 2011] [error] [client 127.0.1.1] PHP Warning:  Invalid argument supplied for foreach() in /home/atantros/projects/spider/public/views/AZ/index.php on line 2
+[Thu Jan 27 10:30:45 2011] [error] [client 127.0.1.1] PHP Stack trace:
+[Thu Jan 27 10:30:45 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0
+[Thu Jan 27 10:30:45 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9
+[Thu Jan 27 10:30:45 2011] [error] [client 127.0.1.1] PHP   3. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0
+[Thu Jan 27 10:30:45 2011] [error] [client 127.0.1.1] PHP   4. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:31
+[Thu Jan 27 10:30:45 2011] [error] [client 127.0.1.1] PHP   5. include() /home/atantros/projects/spider/public/classes/TemplateClass.php:27
+[Thu Jan 27 10:30:45 2011] [error] [client 127.0.1.1] PHP Warning:  Invalid argument supplied for foreach() in /home/atantros/projects/spider/public/views/AZ/index.php on line 2
+[Thu Jan 27 10:30:45 2011] [error] [client 127.0.1.1] PHP Stack trace:
+[Thu Jan 27 10:30:45 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0
+[Thu Jan 27 10:30:45 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9
+[Thu Jan 27 10:30:45 2011] [error] [client 127.0.1.1] PHP   3. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0
+[Thu Jan 27 10:30:45 2011] [error] [client 127.0.1.1] PHP   4. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:31
+[Thu Jan 27 10:30:45 2011] [error] [client 127.0.1.1] PHP   5. include() /home/atantros/projects/spider/public/classes/TemplateClass.php:27
+[Thu Jan 27 10:30:45 2011] [error] [client 127.0.1.1] PHP Warning:  Invalid argument supplied for foreach() in /home/atantros/projects/spider/public/views/AZ/index.php on line 2
+[Thu Jan 27 10:30:45 2011] [error] [client 127.0.1.1] PHP Stack trace:
+[Thu Jan 27 10:30:45 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0
+[Thu Jan 27 10:30:45 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9
+[Thu Jan 27 10:30:45 2011] [error] [client 127.0.1.1] PHP   3. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0
+[Thu Jan 27 10:30:45 2011] [error] [client 127.0.1.1] PHP   4. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:31
+[Thu Jan 27 10:30:45 2011] [error] [client 127.0.1.1] PHP   5. include() /home/atantros/projects/spider/public/classes/TemplateClass.php:27
+[Thu Jan 27 10:30:58 2011] [error] [client 127.0.1.1] PHP Notice:  Undefined variable: letter in /home/atantros/projects/spider/public/views/AZ/index.php on line 3
+[Thu Jan 27 10:30:58 2011] [error] [client 127.0.1.1] PHP Stack trace:
+[Thu Jan 27 10:30:58 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0
+[Thu Jan 27 10:30:58 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9
+[Thu Jan 27 10:30:58 2011] [error] [client 127.0.1.1] PHP   3. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0
+[Thu Jan 27 10:30:58 2011] [error] [client 127.0.1.1] PHP   4. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:31
+[Thu Jan 27 10:30:58 2011] [error] [client 127.0.1.1] PHP   5. include() /home/atantros/projects/spider/public/classes/TemplateClass.php:27
+[Thu Jan 27 10:30:58 2011] [error] [client 127.0.1.1] PHP Warning:  Invalid argument supplied for foreach() in /home/atantros/projects/spider/public/views/AZ/index.php on line 3
+[Thu Jan 27 10:30:58 2011] [error] [client 127.0.1.1] PHP Stack trace:
+[Thu Jan 27 10:30:58 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0
+[Thu Jan 27 10:30:58 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9
+[Thu Jan 27 10:30:58 2011] [error] [client 127.0.1.1] PHP   3. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0
+[Thu Jan 27 10:30:58 2011] [error] [client 127.0.1.1] PHP   4. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:31
+[Thu Jan 27 10:30:58 2011] [error] [client 127.0.1.1] PHP   5. include() /home/atantros/projects/spider/public/classes/TemplateClass.php:27
+[Thu Jan 27 10:33:56 2011] [error] [client 127.0.1.1] PHP Warning:  explode(): Empty delimiter in /home/atantros/projects/spider/public/controllers/AZController.php on line 6
+[Thu Jan 27 10:33:56 2011] [error] [client 127.0.1.1] PHP Stack trace:
+[Thu Jan 27 10:33:56 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0
+[Thu Jan 27 10:33:56 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9
+[Thu Jan 27 10:33:56 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:60
+[Thu Jan 27 10:33:56 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:45
+[Thu Jan 27 10:33:56 2011] [error] [client 127.0.1.1] PHP   5. AZController->index() /home/atantros/projects/spider/public/bootstrap.php:0
+[Thu Jan 27 10:33:56 2011] [error] [client 127.0.1.1] PHP   6. explode() /home/atantros/projects/spider/public/controllers/AZController.php:6
+[Thu Jan 27 10:33:56 2011] [error] [client 127.0.1.1] PHP Notice:  Undefined variable: letter in /home/atantros/projects/spider/public/views/AZ/index.php on line 3
+[Thu Jan 27 10:33:56 2011] [error] [client 127.0.1.1] PHP Stack trace:
+[Thu Jan 27 10:33:56 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0
+[Thu Jan 27 10:33:56 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9
+[Thu Jan 27 10:33:56 2011] [error] [client 127.0.1.1] PHP   3. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0
+[Thu Jan 27 10:33:56 2011] [error] [client 127.0.1.1] PHP   4. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:31
+[Thu Jan 27 10:33:56 2011] [error] [client 127.0.1.1] PHP   5. include() /home/atantros/projects/spider/public/classes/TemplateClass.php:27
+[Thu Jan 27 10:33:56 2011] [error] [client 127.0.1.1] PHP Warning:  Invalid argument supplied for foreach() in /home/atantros/projects/spider/public/views/AZ/index.php on line 3
+[Thu Jan 27 10:33:56 2011] [error] [client 127.0.1.1] PHP Stack trace:
+[Thu Jan 27 10:33:56 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0
+[Thu Jan 27 10:33:56 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9
+[Thu Jan 27 10:33:56 2011] [error] [client 127.0.1.1] PHP   3. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0
+[Thu Jan 27 10:33:56 2011] [error] [client 127.0.1.1] PHP   4. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:31
+[Thu Jan 27 10:33:56 2011] [error] [client 127.0.1.1] PHP   5. include() /home/atantros/projects/spider/public/classes/TemplateClass.php:27
+[Thu Jan 27 10:34:57 2011] [error] [client 127.0.1.1] PHP Notice:  Undefined variable: letter in /home/atantros/projects/spider/public/views/AZ/index.php on line 3
+[Thu Jan 27 10:34:57 2011] [error] [client 127.0.1.1] PHP Stack trace:
+[Thu Jan 27 10:34:57 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0
+[Thu Jan 27 10:34:57 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9
+[Thu Jan 27 10:34:57 2011] [error] [client 127.0.1.1] PHP   3. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0
+[Thu Jan 27 10:34:57 2011] [error] [client 127.0.1.1] PHP   4. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:31
+[Thu Jan 27 10:34:57 2011] [error] [client 127.0.1.1] PHP   5. include() /home/atantros/projects/spider/public/classes/TemplateClass.php:27
+[Thu Jan 27 10:34:57 2011] [error] [client 127.0.1.1] PHP Warning:  Invalid argument supplied for foreach() in /home/atantros/projects/spider/public/views/AZ/index.php on line 3
+[Thu Jan 27 10:34:57 2011] [error] [client 127.0.1.1] PHP Stack trace:
+[Thu Jan 27 10:34:57 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0
+[Thu Jan 27 10:34:57 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9
+[Thu Jan 27 10:34:57 2011] [error] [client 127.0.1.1] PHP   3. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0
+[Thu Jan 27 10:34:57 2011] [error] [client 127.0.1.1] PHP   4. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:31
+[Thu Jan 27 10:34:57 2011] [error] [client 127.0.1.1] PHP   5. include() /home/atantros/projects/spider/public/classes/TemplateClass.php:27
+[Thu Jan 27 10:42:42 2011] [error] [client 127.0.1.1] PHP Fatal error:  Can't use function return value in write context in /home/atantros/projects/spider/public/controllers/AZController.php on line 18
+[Thu Jan 27 10:42:42 2011] [error] [client 127.0.1.1] PHP Stack trace:
+[Thu Jan 27 10:42:42 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0
+[Thu Jan 27 10:42:42 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9
+[Thu Jan 27 10:42:42 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:60
+[Thu Jan 27 10:43:14 2011] [error] [client 127.0.1.1] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/atantros/projects/spider/public/controllers/AZController.php on line 16, referer: http://spider/index.php?url=AZ
+[Thu Jan 27 10:43:14 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ
+[Thu Jan 27 10:43:14 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ
+[Thu Jan 27 10:43:14 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ
+[Thu Jan 27 10:43:14 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:60, referer: http://spider/index.php?url=AZ
+[Thu Jan 27 10:43:14 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:45, referer: http://spider/index.php?url=AZ
+[Thu Jan 27 10:43:14 2011] [error] [client 127.0.1.1] PHP   5. AZController->letter() /home/atantros/projects/spider/public/bootstrap.php:0, referer: http://spider/index.php?url=AZ
+[Thu Jan 27 10:43:14 2011] [error] [client 127.0.1.1] PHP   6. mysql_num_rows() /home/atantros/projects/spider/public/controllers/AZController.php:16, referer: http://spider/index.php?url=AZ
+[Thu Jan 27 10:43:14 2011] [error] [client 127.0.1.1] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/atantros/projects/spider/public/controllers/AZController.php on line 18, referer: http://spider/index.php?url=AZ
+[Thu Jan 27 10:43:14 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ
+[Thu Jan 27 10:43:14 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ
+[Thu Jan 27 10:43:14 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ
+[Thu Jan 27 10:43:14 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:60, referer: http://spider/index.php?url=AZ
+[Thu Jan 27 10:43:14 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:45, referer: http://spider/index.php?url=AZ
+[Thu Jan 27 10:43:14 2011] [error] [client 127.0.1.1] PHP   5. AZController->letter() /home/atantros/projects/spider/public/bootstrap.php:0, referer: http://spider/index.php?url=AZ
+[Thu Jan 27 10:43:14 2011] [error] [client 127.0.1.1] PHP   6. mysql_fetch_array() /home/atantros/projects/spider/public/controllers/AZController.php:18, referer: http://spider/index.php?url=AZ
+[Thu Jan 27 10:43:14 2011] [error] [client 127.0.1.1] PHP Notice:  Undefined variable: urls in /home/atantros/projects/spider/public/controllers/AZController.php on line 22, referer: http://spider/index.php?url=AZ
+[Thu Jan 27 10:43:14 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ
+[Thu Jan 27 10:43:14 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ
+[Thu Jan 27 10:43:14 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ
+[Thu Jan 27 10:43:14 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:60, referer: http://spider/index.php?url=AZ
+[Thu Jan 27 10:43:14 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:45, referer: http://spider/index.php?url=AZ
+[Thu Jan 27 10:43:14 2011] [error] [client 127.0.1.1] PHP   5. AZController->letter() /home/atantros/projects/spider/public/bootstrap.php:0, referer: http://spider/index.php?url=AZ
+[Thu Jan 27 10:43:14 2011] [error] [client 127.0.1.1] PHP Warning:  include(/home/atantros/projects/spider/public/views/AZ/letter.php): failed to open stream: No such file or directory in /home/atantros/projects/spider/public/classes/TemplateClass.php on line 27, referer: http://spider/index.php?url=AZ
+[Thu Jan 27 10:43:14 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ
+[Thu Jan 27 10:43:14 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ
+[Thu Jan 27 10:43:14 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ
+[Thu Jan 27 10:43:14 2011] [error] [client 127.0.1.1] PHP   3. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0, referer: http://spider/index.php?url=AZ
+[Thu Jan 27 10:43:14 2011] [error] [client 127.0.1.1] PHP   4. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:31, referer: http://spider/index.php?url=AZ
+[Thu Jan 27 10:43:14 2011] [error] [client 127.0.1.1] PHP Warning:  include(): Failed opening '/home/atantros/projects/spider/public/views/AZ/letter.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/atantros/projects/spider/public/classes/TemplateClass.php on line 27, referer: http://spider/index.php?url=AZ
+[Thu Jan 27 10:43:14 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ
+[Thu Jan 27 10:43:14 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ
+[Thu Jan 27 10:43:14 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ
+[Thu Jan 27 10:43:14 2011] [error] [client 127.0.1.1] PHP   3. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0, referer: http://spider/index.php?url=AZ
+[Thu Jan 27 10:43:14 2011] [error] [client 127.0.1.1] PHP   4. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:31, referer: http://spider/index.php?url=AZ
+[Thu Jan 27 10:43:15 2011] [error] [client 127.0.1.1] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/atantros/projects/spider/public/controllers/AZController.php on line 16, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:15 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:15 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:15 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:15 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:60, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:15 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:45, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:15 2011] [error] [client 127.0.1.1] PHP   5. AZController->letter() /home/atantros/projects/spider/public/bootstrap.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:15 2011] [error] [client 127.0.1.1] PHP   6. mysql_num_rows() /home/atantros/projects/spider/public/controllers/AZController.php:16, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:15 2011] [error] [client 127.0.1.1] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/atantros/projects/spider/public/controllers/AZController.php on line 18, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:15 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:15 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:15 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:15 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:60, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:15 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:45, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:15 2011] [error] [client 127.0.1.1] PHP   5. AZController->letter() /home/atantros/projects/spider/public/bootstrap.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:15 2011] [error] [client 127.0.1.1] PHP   6. mysql_fetch_array() /home/atantros/projects/spider/public/controllers/AZController.php:18, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:15 2011] [error] [client 127.0.1.1] PHP Notice:  Undefined variable: urls in /home/atantros/projects/spider/public/controllers/AZController.php on line 22, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:15 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:15 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:15 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:15 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:60, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:15 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:45, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:15 2011] [error] [client 127.0.1.1] PHP   5. AZController->letter() /home/atantros/projects/spider/public/bootstrap.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:15 2011] [error] [client 127.0.1.1] PHP Warning:  include(/home/atantros/projects/spider/public/views/AZ/letter.php): failed to open stream: No such file or directory in /home/atantros/projects/spider/public/classes/TemplateClass.php on line 27, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:15 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:15 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:15 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:15 2011] [error] [client 127.0.1.1] PHP   3. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:15 2011] [error] [client 127.0.1.1] PHP   4. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:31, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:15 2011] [error] [client 127.0.1.1] PHP Warning:  include(): Failed opening '/home/atantros/projects/spider/public/views/AZ/letter.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/atantros/projects/spider/public/classes/TemplateClass.php on line 27, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:15 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:15 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:15 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:15 2011] [error] [client 127.0.1.1] PHP   3. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:15 2011] [error] [client 127.0.1.1] PHP   4. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:31, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:17 2011] [error] [client 127.0.1.1] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/atantros/projects/spider/public/controllers/AZController.php on line 16, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:17 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:17 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:17 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:17 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:60, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:17 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:45, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:17 2011] [error] [client 127.0.1.1] PHP   5. AZController->letter() /home/atantros/projects/spider/public/bootstrap.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:17 2011] [error] [client 127.0.1.1] PHP   6. mysql_num_rows() /home/atantros/projects/spider/public/controllers/AZController.php:16, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:17 2011] [error] [client 127.0.1.1] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/atantros/projects/spider/public/controllers/AZController.php on line 18, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:17 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:17 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:17 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:17 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:60, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:17 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:45, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:17 2011] [error] [client 127.0.1.1] PHP   5. AZController->letter() /home/atantros/projects/spider/public/bootstrap.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:17 2011] [error] [client 127.0.1.1] PHP   6. mysql_fetch_array() /home/atantros/projects/spider/public/controllers/AZController.php:18, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:17 2011] [error] [client 127.0.1.1] PHP Notice:  Undefined variable: urls in /home/atantros/projects/spider/public/controllers/AZController.php on line 22, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:17 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:17 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:17 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:17 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:60, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:17 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:45, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:17 2011] [error] [client 127.0.1.1] PHP   5. AZController->letter() /home/atantros/projects/spider/public/bootstrap.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:17 2011] [error] [client 127.0.1.1] PHP Warning:  include(/home/atantros/projects/spider/public/views/AZ/letter.php): failed to open stream: No such file or directory in /home/atantros/projects/spider/public/classes/TemplateClass.php on line 27, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:17 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:17 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:17 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:17 2011] [error] [client 127.0.1.1] PHP   3. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:17 2011] [error] [client 127.0.1.1] PHP   4. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:31, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:17 2011] [error] [client 127.0.1.1] PHP Warning:  include(): Failed opening '/home/atantros/projects/spider/public/views/AZ/letter.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/atantros/projects/spider/public/classes/TemplateClass.php on line 27, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:17 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:17 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:17 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:17 2011] [error] [client 127.0.1.1] PHP   3. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:17 2011] [error] [client 127.0.1.1] PHP   4. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:31, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:18 2011] [error] [client 127.0.1.1] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/atantros/projects/spider/public/controllers/AZController.php on line 16, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:18 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:18 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:18 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:18 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:60, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:18 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:45, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:18 2011] [error] [client 127.0.1.1] PHP   5. AZController->letter() /home/atantros/projects/spider/public/bootstrap.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:18 2011] [error] [client 127.0.1.1] PHP   6. mysql_num_rows() /home/atantros/projects/spider/public/controllers/AZController.php:16, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:18 2011] [error] [client 127.0.1.1] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/atantros/projects/spider/public/controllers/AZController.php on line 18, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:18 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:18 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:18 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:18 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:60, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:18 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:45, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:18 2011] [error] [client 127.0.1.1] PHP   5. AZController->letter() /home/atantros/projects/spider/public/bootstrap.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:18 2011] [error] [client 127.0.1.1] PHP   6. mysql_fetch_array() /home/atantros/projects/spider/public/controllers/AZController.php:18, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:18 2011] [error] [client 127.0.1.1] PHP Notice:  Undefined variable: urls in /home/atantros/projects/spider/public/controllers/AZController.php on line 22, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:18 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:18 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:18 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:18 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:60, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:18 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:45, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:18 2011] [error] [client 127.0.1.1] PHP   5. AZController->letter() /home/atantros/projects/spider/public/bootstrap.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:18 2011] [error] [client 127.0.1.1] PHP Warning:  include(/home/atantros/projects/spider/public/views/AZ/letter.php): failed to open stream: No such file or directory in /home/atantros/projects/spider/public/classes/TemplateClass.php on line 27, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:18 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:18 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:18 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:18 2011] [error] [client 127.0.1.1] PHP   3. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:18 2011] [error] [client 127.0.1.1] PHP   4. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:31, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:18 2011] [error] [client 127.0.1.1] PHP Warning:  include(): Failed opening '/home/atantros/projects/spider/public/views/AZ/letter.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/atantros/projects/spider/public/classes/TemplateClass.php on line 27, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:18 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:18 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:18 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:18 2011] [error] [client 127.0.1.1] PHP   3. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:18 2011] [error] [client 127.0.1.1] PHP   4. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:31, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/atantros/projects/spider/public/controllers/AZController.php on line 16, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:60, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:45, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP   5. AZController->letter() /home/atantros/projects/spider/public/bootstrap.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP   6. mysql_num_rows() /home/atantros/projects/spider/public/controllers/AZController.php:16, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/atantros/projects/spider/public/controllers/AZController.php on line 18, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:60, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:45, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP   5. AZController->letter() /home/atantros/projects/spider/public/bootstrap.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP   6. mysql_fetch_array() /home/atantros/projects/spider/public/controllers/AZController.php:18, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP Notice:  Undefined variable: urls in /home/atantros/projects/spider/public/controllers/AZController.php on line 22, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:60, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:45, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP   5. AZController->letter() /home/atantros/projects/spider/public/bootstrap.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP Warning:  include(/home/atantros/projects/spider/public/views/AZ/letter.php): failed to open stream: No such file or directory in /home/atantros/projects/spider/public/classes/TemplateClass.php on line 27, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP   3. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP   4. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:31, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP Warning:  include(): Failed opening '/home/atantros/projects/spider/public/views/AZ/letter.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/atantros/projects/spider/public/classes/TemplateClass.php on line 27, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP   3. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP   4. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:31, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/atantros/projects/spider/public/controllers/AZController.php on line 16, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:60, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:45, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP   5. AZController->letter() /home/atantros/projects/spider/public/bootstrap.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP   6. mysql_num_rows() /home/atantros/projects/spider/public/controllers/AZController.php:16, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/atantros/projects/spider/public/controllers/AZController.php on line 18, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:60, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:45, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP   5. AZController->letter() /home/atantros/projects/spider/public/bootstrap.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP   6. mysql_fetch_array() /home/atantros/projects/spider/public/controllers/AZController.php:18, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP Notice:  Undefined variable: urls in /home/atantros/projects/spider/public/controllers/AZController.php on line 22, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:60, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:45, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP   5. AZController->letter() /home/atantros/projects/spider/public/bootstrap.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP Warning:  include(/home/atantros/projects/spider/public/views/AZ/letter.php): failed to open stream: No such file or directory in /home/atantros/projects/spider/public/classes/TemplateClass.php on line 27, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP   3. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP   4. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:31, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP Warning:  include(): Failed opening '/home/atantros/projects/spider/public/views/AZ/letter.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/atantros/projects/spider/public/classes/TemplateClass.php on line 27, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP   3. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:43:44 2011] [error] [client 127.0.1.1] PHP   4. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:31, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:44:38 2011] [error] [client 127.0.1.1] PHP Warning:  include(/home/atantros/projects/spider/public/views/AZ/letter.php): failed to open stream: No such file or directory in /home/atantros/projects/spider/public/classes/TemplateClass.php on line 27, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:44:38 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:44:38 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:44:38 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:44:38 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:60, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:44:38 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:45, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:44:38 2011] [error] [client 127.0.1.1] PHP   5. AZController->letter() /home/atantros/projects/spider/public/bootstrap.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:44:38 2011] [error] [client 127.0.1.1] PHP   6. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:44:38 2011] [error] [client 127.0.1.1] PHP   7. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:31, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:44:38 2011] [error] [client 127.0.1.1] PHP Warning:  include(): Failed opening '/home/atantros/projects/spider/public/views/AZ/letter.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/atantros/projects/spider/public/classes/TemplateClass.php on line 27, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:44:38 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:44:38 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:44:38 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:44:38 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:60, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:44:38 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:45, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:44:38 2011] [error] [client 127.0.1.1] PHP   5. AZController->letter() /home/atantros/projects/spider/public/bootstrap.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:44:38 2011] [error] [client 127.0.1.1] PHP   6. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:44:38 2011] [error] [client 127.0.1.1] PHP   7. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:31, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:44:39 2011] [error] [client 127.0.1.1] PHP Warning:  include(/home/atantros/projects/spider/public/views/AZ/letter.php): failed to open stream: No such file or directory in /home/atantros/projects/spider/public/classes/TemplateClass.php on line 27, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:44:39 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:44:39 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:44:39 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:44:39 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:60, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:44:39 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:45, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:44:39 2011] [error] [client 127.0.1.1] PHP   5. AZController->letter() /home/atantros/projects/spider/public/bootstrap.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:44:39 2011] [error] [client 127.0.1.1] PHP   6. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:44:39 2011] [error] [client 127.0.1.1] PHP   7. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:31, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:44:39 2011] [error] [client 127.0.1.1] PHP Warning:  include(): Failed opening '/home/atantros/projects/spider/public/views/AZ/letter.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/atantros/projects/spider/public/classes/TemplateClass.php on line 27, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:44:39 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:44:39 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:44:39 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:44:39 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:60, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:44:39 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:45, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:44:39 2011] [error] [client 127.0.1.1] PHP   5. AZController->letter() /home/atantros/projects/spider/public/bootstrap.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:44:39 2011] [error] [client 127.0.1.1] PHP   6. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:44:39 2011] [error] [client 127.0.1.1] PHP   7. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:31, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:44:51 2011] [error] [client 127.0.1.1] PHP Warning:  include(/home/atantros/projects/spider/public/views/AZ/letter.php): failed to open stream: No such file or directory in /home/atantros/projects/spider/public/classes/TemplateClass.php on line 27, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:44:51 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:44:51 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:44:51 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:44:51 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:60, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:44:51 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:45, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:44:51 2011] [error] [client 127.0.1.1] PHP   5. AZController->letter() /home/atantros/projects/spider/public/bootstrap.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:44:51 2011] [error] [client 127.0.1.1] PHP   6. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:44:51 2011] [error] [client 127.0.1.1] PHP   7. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:31, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:44:51 2011] [error] [client 127.0.1.1] PHP Warning:  include(): Failed opening '/home/atantros/projects/spider/public/views/AZ/letter.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/atantros/projects/spider/public/classes/TemplateClass.php on line 27, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:44:51 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:44:51 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:44:51 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:44:51 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:60, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:44:51 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:45, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:44:51 2011] [error] [client 127.0.1.1] PHP   5. AZController->letter() /home/atantros/projects/spider/public/bootstrap.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:44:51 2011] [error] [client 127.0.1.1] PHP   6. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:44:51 2011] [error] [client 127.0.1.1] PHP   7. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:31, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:09 2011] [error] [client 127.0.1.1] PHP Warning:  include(/home/atantros/projects/spider/public/views/AZ/letter.php): failed to open stream: No such file or directory in /home/atantros/projects/spider/public/classes/TemplateClass.php on line 27, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:09 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:09 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:09 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:09 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:60, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:09 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:45, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:09 2011] [error] [client 127.0.1.1] PHP   5. AZController->letter() /home/atantros/projects/spider/public/bootstrap.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:09 2011] [error] [client 127.0.1.1] PHP   6. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:09 2011] [error] [client 127.0.1.1] PHP   7. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:31, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:09 2011] [error] [client 127.0.1.1] PHP Warning:  include(): Failed opening '/home/atantros/projects/spider/public/views/AZ/letter.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/atantros/projects/spider/public/classes/TemplateClass.php on line 27, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:09 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:09 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:09 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:09 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:60, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:09 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:45, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:09 2011] [error] [client 127.0.1.1] PHP   5. AZController->letter() /home/atantros/projects/spider/public/bootstrap.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:09 2011] [error] [client 127.0.1.1] PHP   6. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:09 2011] [error] [client 127.0.1.1] PHP   7. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:31, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:09 2011] [error] [client 127.0.1.1] PHP Warning:  include(/home/atantros/projects/spider/public/views/AZ/letter.php): failed to open stream: No such file or directory in /home/atantros/projects/spider/public/classes/TemplateClass.php on line 27, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:09 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:09 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:09 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:09 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:60, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:09 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:45, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:09 2011] [error] [client 127.0.1.1] PHP   5. AZController->letter() /home/atantros/projects/spider/public/bootstrap.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:09 2011] [error] [client 127.0.1.1] PHP   6. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:09 2011] [error] [client 127.0.1.1] PHP   7. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:31, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:09 2011] [error] [client 127.0.1.1] PHP Warning:  include(): Failed opening '/home/atantros/projects/spider/public/views/AZ/letter.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/atantros/projects/spider/public/classes/TemplateClass.php on line 27, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:09 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:09 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:09 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:09 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:60, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:09 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:45, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:09 2011] [error] [client 127.0.1.1] PHP   5. AZController->letter() /home/atantros/projects/spider/public/bootstrap.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:09 2011] [error] [client 127.0.1.1] PHP   6. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:09 2011] [error] [client 127.0.1.1] PHP   7. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:31, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:10 2011] [error] [client 127.0.1.1] PHP Warning:  include(/home/atantros/projects/spider/public/views/AZ/letter.php): failed to open stream: No such file or directory in /home/atantros/projects/spider/public/classes/TemplateClass.php on line 27, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:10 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:10 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:10 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:10 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:60, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:10 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:45, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:10 2011] [error] [client 127.0.1.1] PHP   5. AZController->letter() /home/atantros/projects/spider/public/bootstrap.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:10 2011] [error] [client 127.0.1.1] PHP   6. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:10 2011] [error] [client 127.0.1.1] PHP   7. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:31, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:10 2011] [error] [client 127.0.1.1] PHP Warning:  include(): Failed opening '/home/atantros/projects/spider/public/views/AZ/letter.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/atantros/projects/spider/public/classes/TemplateClass.php on line 27, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:10 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:10 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:10 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:10 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:60, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:10 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:45, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:10 2011] [error] [client 127.0.1.1] PHP   5. AZController->letter() /home/atantros/projects/spider/public/bootstrap.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:10 2011] [error] [client 127.0.1.1] PHP   6. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:10 2011] [error] [client 127.0.1.1] PHP   7. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:31, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:11 2011] [error] [client 127.0.1.1] PHP Warning:  include(/home/atantros/projects/spider/public/views/AZ/letter.php): failed to open stream: No such file or directory in /home/atantros/projects/spider/public/classes/TemplateClass.php on line 27, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:11 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:11 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:11 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:11 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:60, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:11 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:45, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:11 2011] [error] [client 127.0.1.1] PHP   5. AZController->letter() /home/atantros/projects/spider/public/bootstrap.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:11 2011] [error] [client 127.0.1.1] PHP   6. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:11 2011] [error] [client 127.0.1.1] PHP   7. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:31, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:11 2011] [error] [client 127.0.1.1] PHP Warning:  include(): Failed opening '/home/atantros/projects/spider/public/views/AZ/letter.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/atantros/projects/spider/public/classes/TemplateClass.php on line 27, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:11 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:11 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:11 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:11 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:60, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:11 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:45, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:11 2011] [error] [client 127.0.1.1] PHP   5. AZController->letter() /home/atantros/projects/spider/public/bootstrap.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:11 2011] [error] [client 127.0.1.1] PHP   6. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:11 2011] [error] [client 127.0.1.1] PHP   7. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:31, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:33 2011] [error] [client 127.0.1.1] PHP Notice:  Undefined variable: urls in /home/atantros/projects/spider/public/views/AZ/letter.php on line 2, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:33 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:33 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:33 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:33 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:60, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:33 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:45, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:33 2011] [error] [client 127.0.1.1] PHP   5. AZController->letter() /home/atantros/projects/spider/public/bootstrap.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:33 2011] [error] [client 127.0.1.1] PHP   6. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:33 2011] [error] [client 127.0.1.1] PHP   7. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:31, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:33 2011] [error] [client 127.0.1.1] PHP   8. include() /home/atantros/projects/spider/public/classes/TemplateClass.php:27, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:33 2011] [error] [client 127.0.1.1] PHP Warning:  Invalid argument supplied for foreach() in /home/atantros/projects/spider/public/views/AZ/letter.php on line 2, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:33 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:33 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:33 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:33 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:60, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:33 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:45, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:33 2011] [error] [client 127.0.1.1] PHP   5. AZController->letter() /home/atantros/projects/spider/public/bootstrap.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:33 2011] [error] [client 127.0.1.1] PHP   6. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:33 2011] [error] [client 127.0.1.1] PHP   7. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:31, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:33 2011] [error] [client 127.0.1.1] PHP   8. include() /home/atantros/projects/spider/public/classes/TemplateClass.php:27, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:55 2011] [error] [client 127.0.1.1] PHP Notice:  Undefined variable: urls in /home/atantros/projects/spider/public/views/AZ/letter.php on line 2, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:55 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:55 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:55 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:55 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:60, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:55 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:45, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:55 2011] [error] [client 127.0.1.1] PHP   5. AZController->letter() /home/atantros/projects/spider/public/bootstrap.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:55 2011] [error] [client 127.0.1.1] PHP   6. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:55 2011] [error] [client 127.0.1.1] PHP   7. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:31, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:55 2011] [error] [client 127.0.1.1] PHP   8. include() /home/atantros/projects/spider/public/classes/TemplateClass.php:27, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:55 2011] [error] [client 127.0.1.1] PHP Warning:  Invalid argument supplied for foreach() in /home/atantros/projects/spider/public/views/AZ/letter.php on line 2, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:55 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:55 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:55 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:55 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:60, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:55 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:45, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:55 2011] [error] [client 127.0.1.1] PHP   5. AZController->letter() /home/atantros/projects/spider/public/bootstrap.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:55 2011] [error] [client 127.0.1.1] PHP   6. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:55 2011] [error] [client 127.0.1.1] PHP   7. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:31, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:45:55 2011] [error] [client 127.0.1.1] PHP   8. include() /home/atantros/projects/spider/public/classes/TemplateClass.php:27, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:13 2011] [error] [client 127.0.1.1] PHP Notice:  Undefined variable: urls in /home/atantros/projects/spider/public/views/AZ/letter.php on line 2, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:13 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:13 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:13 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:13 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:60, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:13 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:45, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:13 2011] [error] [client 127.0.1.1] PHP   5. AZController->letter() /home/atantros/projects/spider/public/bootstrap.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:13 2011] [error] [client 127.0.1.1] PHP   6. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:13 2011] [error] [client 127.0.1.1] PHP   7. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:31, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:13 2011] [error] [client 127.0.1.1] PHP   8. include() /home/atantros/projects/spider/public/classes/TemplateClass.php:27, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:13 2011] [error] [client 127.0.1.1] PHP Warning:  Invalid argument supplied for foreach() in /home/atantros/projects/spider/public/views/AZ/letter.php on line 2, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:13 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:13 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:13 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:13 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:60, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:13 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:45, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:13 2011] [error] [client 127.0.1.1] PHP   5. AZController->letter() /home/atantros/projects/spider/public/bootstrap.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:13 2011] [error] [client 127.0.1.1] PHP   6. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:13 2011] [error] [client 127.0.1.1] PHP   7. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:31, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:13 2011] [error] [client 127.0.1.1] PHP   8. include() /home/atantros/projects/spider/public/classes/TemplateClass.php:27, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:25 2011] [error] [client 127.0.1.1] PHP Notice:  Undefined variable: urls in /home/atantros/projects/spider/public/views/AZ/letter.php on line 2, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:25 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:25 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:25 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:25 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:60, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:25 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:45, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:25 2011] [error] [client 127.0.1.1] PHP   5. AZController->letter() /home/atantros/projects/spider/public/bootstrap.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:25 2011] [error] [client 127.0.1.1] PHP   6. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:25 2011] [error] [client 127.0.1.1] PHP   7. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:31, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:25 2011] [error] [client 127.0.1.1] PHP   8. include() /home/atantros/projects/spider/public/classes/TemplateClass.php:27, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:25 2011] [error] [client 127.0.1.1] PHP Warning:  Invalid argument supplied for foreach() in /home/atantros/projects/spider/public/views/AZ/letter.php on line 2, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:25 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:25 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:25 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:25 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:60, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:25 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:45, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:25 2011] [error] [client 127.0.1.1] PHP   5. AZController->letter() /home/atantros/projects/spider/public/bootstrap.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:25 2011] [error] [client 127.0.1.1] PHP   6. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:25 2011] [error] [client 127.0.1.1] PHP   7. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:31, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:25 2011] [error] [client 127.0.1.1] PHP   8. include() /home/atantros/projects/spider/public/classes/TemplateClass.php:27, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:27 2011] [error] [client 127.0.1.1] PHP Notice:  Undefined variable: urls in /home/atantros/projects/spider/public/views/AZ/letter.php on line 2, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:27 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:27 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:27 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:27 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:60, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:27 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:45, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:27 2011] [error] [client 127.0.1.1] PHP   5. AZController->letter() /home/atantros/projects/spider/public/bootstrap.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:27 2011] [error] [client 127.0.1.1] PHP   6. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:27 2011] [error] [client 127.0.1.1] PHP   7. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:31, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:27 2011] [error] [client 127.0.1.1] PHP   8. include() /home/atantros/projects/spider/public/classes/TemplateClass.php:27, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:27 2011] [error] [client 127.0.1.1] PHP Warning:  Invalid argument supplied for foreach() in /home/atantros/projects/spider/public/views/AZ/letter.php on line 2, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:27 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:27 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:27 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:27 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:60, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:27 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:45, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:27 2011] [error] [client 127.0.1.1] PHP   5. AZController->letter() /home/atantros/projects/spider/public/bootstrap.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:27 2011] [error] [client 127.0.1.1] PHP   6. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:27 2011] [error] [client 127.0.1.1] PHP   7. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:31, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:27 2011] [error] [client 127.0.1.1] PHP   8. include() /home/atantros/projects/spider/public/classes/TemplateClass.php:27, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:45 2011] [error] [client 127.0.1.1] PHP Notice:  Undefined variable: urls in /home/atantros/projects/spider/public/views/AZ/letter.php on line 2, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:45 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:45 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:45 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:45 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:60, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:45 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:45, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:45 2011] [error] [client 127.0.1.1] PHP   5. AZController->letter() /home/atantros/projects/spider/public/bootstrap.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:45 2011] [error] [client 127.0.1.1] PHP   6. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:45 2011] [error] [client 127.0.1.1] PHP   7. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:31, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:45 2011] [error] [client 127.0.1.1] PHP   8. include() /home/atantros/projects/spider/public/classes/TemplateClass.php:27, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:45 2011] [error] [client 127.0.1.1] PHP Warning:  Invalid argument supplied for foreach() in /home/atantros/projects/spider/public/views/AZ/letter.php on line 2, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:45 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:45 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:45 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:45 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:60, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:45 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:45, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:45 2011] [error] [client 127.0.1.1] PHP   5. AZController->letter() /home/atantros/projects/spider/public/bootstrap.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:45 2011] [error] [client 127.0.1.1] PHP   6. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:45 2011] [error] [client 127.0.1.1] PHP   7. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:31, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:46:45 2011] [error] [client 127.0.1.1] PHP   8. include() /home/atantros/projects/spider/public/classes/TemplateClass.php:27, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:47:48 2011] [error] [client 127.0.1.1] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/atantros/projects/spider/public/controllers/AZController.php on line 23, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:47:48 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:47:48 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:47:48 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:47:48 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:60, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:47:48 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:45, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:47:48 2011] [error] [client 127.0.1.1] PHP   5. AZController->letter() /home/atantros/projects/spider/public/bootstrap.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:47:48 2011] [error] [client 127.0.1.1] PHP   6. array_push() /home/atantros/projects/spider/public/controllers/AZController.php:23, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:47:48 2011] [error] [client 127.0.1.1] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/atantros/projects/spider/public/controllers/AZController.php on line 23, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:47:48 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:47:48 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:47:48 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:47:48 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:60, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:47:48 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:45, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:47:48 2011] [error] [client 127.0.1.1] PHP   5. AZController->letter() /home/atantros/projects/spider/public/bootstrap.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:47:48 2011] [error] [client 127.0.1.1] PHP   6. array_push() /home/atantros/projects/spider/public/controllers/AZController.php:23, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:47:48 2011] [error] [client 127.0.1.1] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/atantros/projects/spider/public/controllers/AZController.php on line 23, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:47:48 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:47:48 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:47:48 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:47:48 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:60, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:47:48 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:45, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:47:48 2011] [error] [client 127.0.1.1] PHP   5. AZController->letter() /home/atantros/projects/spider/public/bootstrap.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:47:48 2011] [error] [client 127.0.1.1] PHP   6. array_push() /home/atantros/projects/spider/public/controllers/AZController.php:23, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:47:48 2011] [error] [client 127.0.1.1] PHP Warning:  Invalid argument supplied for foreach() in /home/atantros/projects/spider/public/views/AZ/letter.php on line 2, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:47:48 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:47:48 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:47:48 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:47:48 2011] [error] [client 127.0.1.1] PHP   3. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:47:48 2011] [error] [client 127.0.1.1] PHP   4. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:31, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:47:48 2011] [error] [client 127.0.1.1] PHP   5. include() /home/atantros/projects/spider/public/classes/TemplateClass.php:27, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:50:13 2011] [error] [client 127.0.1.1] PHP Notice:  Undefined variable: letter in /home/atantros/projects/spider/public/views/AZ/letter.php on line 1, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:50:13 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:50:13 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:50:13 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:50:13 2011] [error] [client 127.0.1.1] PHP   3. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:50:13 2011] [error] [client 127.0.1.1] PHP   4. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:31, referer: http://spider/index.php?url=AZ/index
+[Thu Jan 27 10:50:13 2011] [error] [client 127.0.1.1] PHP   5. include() /home/atantros/projects/spider/public/classes/TemplateClass.php:27, referer: http://spider/index.php?url=AZ/index

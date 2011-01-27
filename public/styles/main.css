@@ -1,0 +1,32 @@
+.menu { clear: right; display: block; }
+.menu ul {
+    float:left;
+    width: 90%;
+    margin: auto;
+    padding: 5px;
+    list-style: none;
+    clear: right;
+}
+.menu ul li {
+    float:left;
+    display: block;
+    padding: 0px;
+    margin: 0px;
+}
+.menu ul li a {
+    width: 150px;
+    height: 20px;
+    float:left;
+    margin: auto;
+    padding: 5px;
+    display: block;
+}
+.content {
+    display: block;
+    float:left;
+    clear:both;
+}
+.footer {    display:block;
+    clear: both;
+}
+
