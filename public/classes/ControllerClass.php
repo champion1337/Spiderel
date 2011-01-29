@@ -4,8 +4,10 @@ class Controller {
     protected $_action;
     protected $_template;
     protected $_session;
+    protected $_format;
     public $config;
-    function __construct($model, $controller, $action) {
+
+    function __construct($model, $controller, $action, $format) {
         session_start();
         $lock_file = ROOT . DS . "install.lock";
         if(!is_file($lock_file)) {
@@ -14,12 +16,18 @@ class Controller {
         $this->_controller = $controller;
         $this->_action = $action;
         $this->_template = new Template($controller,$action);
+        $this->_template->set_format( $format );
         if(isset($_SESSION['notice'])) {
             $this->set('notice',$_SESSION['notice']);
             unset($_SESSION['notice']);
         }
-    }
 
+    }
+    
+    function set_format( $format )
+    {
+        $this->_format = $format;
+    }
     function set($name,$value) {
         $this->_template->set($name,$value);
     }

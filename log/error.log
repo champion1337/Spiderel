@@ -8997,3 +8997,108 @@
 [Thu Jan 27 10:50:13 2011] [error] [client 127.0.1.1] PHP   3. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0, referer: http://spider/index.php?url=AZ/index
 [Thu Jan 27 10:50:13 2011] [error] [client 127.0.1.1] PHP   4. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:31, referer: http://spider/index.php?url=AZ/index
 [Thu Jan 27 10:50:13 2011] [error] [client 127.0.1.1] PHP   5. include() /home/atantros/projects/spider/public/classes/TemplateClass.php:27, referer: http://spider/index.php?url=AZ/index
+[Fri Jan 28 23:29:00 2011] [error] [client 127.0.1.1] PHP Parse error:  syntax error, unexpected '=' in /home/atantros/projects/spider/public/classes/ControllerClass.php on line 29
+[Fri Jan 28 23:29:00 2011] [error] [client 127.0.1.1] PHP Stack trace:
+[Fri Jan 28 23:29:00 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0
+[Fri Jan 28 23:29:00 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9
+[Fri Jan 28 23:29:00 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:66
+[Fri Jan 28 23:29:00 2011] [error] [client 127.0.1.1] PHP   4. require_once() /home/atantros/projects/spider/public/bootstrap.php:39
+[Fri Jan 28 23:29:00 2011] [error] [client 127.0.1.1] PHP   5. __autoload() /home/atantros/projects/spider/public/bootstrap.php:0
+[Fri Jan 28 23:29:00 2011] [error] [client 127.0.1.1] File does not exist: /home/atantros/projects/spider/public/favicon.ico
+[Fri Jan 28 23:29:03 2011] [error] [client 127.0.1.1] File does not exist: /home/atantros/projects/spider/public/favicon.ico
+[Fri Jan 28 23:29:18 2011] [error] [client 127.0.1.1] PHP Parse error:  syntax error, unexpected '{' in /home/atantros/projects/spider/public/classes/TemplateClass.php on line 47
+[Fri Jan 28 23:29:18 2011] [error] [client 127.0.1.1] PHP Stack trace:
+[Fri Jan 28 23:29:18 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0
+[Fri Jan 28 23:29:18 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9
+[Fri Jan 28 23:29:18 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:66
+[Fri Jan 28 23:29:18 2011] [error] [client 127.0.1.1] PHP   4. Controller->__construct() /home/atantros/projects/spider/public/bootstrap.php:48
+[Fri Jan 28 23:29:18 2011] [error] [client 127.0.1.1] PHP   5. __autoload() /home/atantros/projects/spider/public/bootstrap.php:0
+[Fri Jan 28 23:29:18 2011] [error] [client 127.0.1.1] PHP Fatal error:  Call to a member function render() on a non-object in /home/atantros/projects/spider/public/classes/ControllerClass.php on line 39
+[Fri Jan 28 23:29:18 2011] [error] [client 127.0.1.1] PHP Stack trace:
+[Fri Jan 28 23:29:18 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0
+[Fri Jan 28 23:29:18 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9
+[Fri Jan 28 23:29:18 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:66
+[Fri Jan 28 23:29:18 2011] [error] [client 127.0.1.1] PHP   4. Controller->__construct() /home/atantros/projects/spider/public/bootstrap.php:48
+[Fri Jan 28 23:29:18 2011] [error] [client 127.0.1.1] PHP   5. __autoload() /home/atantros/projects/spider/public/bootstrap.php:0
+[Fri Jan 28 23:29:18 2011] [error] [client 127.0.1.1] PHP   6. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0
+[Fri Jan 28 23:29:31 2011] [error] [client 127.0.1.1] PHP Notice:  Undefined variable: format in /home/atantros/projects/spider/public/bootstrap.php on line 49
+[Fri Jan 28 23:29:31 2011] [error] [client 127.0.1.1] PHP Stack trace:
+[Fri Jan 28 23:29:31 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0
+[Fri Jan 28 23:29:31 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9
+[Fri Jan 28 23:29:31 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:66
+[Sat Jan 29 09:07:20 2011] [error] [client 127.0.1.1] File does not exist: /home/atantros/projects/spider/public/favicon.ico
+[Sat Jan 29 09:07:24 2011] [error] [client 127.0.1.1] File does not exist: /home/atantros/projects/spider/public/favicon.ico
+[Sat Jan 29 09:34:16 2011] [error] [client 127.0.1.1] PHP Notice:  Undefined variable: query in /home/atantros/projects/spider/public/controllers/SearchController.php on line 15
+[Sat Jan 29 09:34:16 2011] [error] [client 127.0.1.1] PHP Stack trace:
+[Sat Jan 29 09:34:16 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0
+[Sat Jan 29 09:34:16 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9
+[Sat Jan 29 09:34:16 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:66
+[Sat Jan 29 09:34:16 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:51
+[Sat Jan 29 09:34:16 2011] [error] [client 127.0.1.1] PHP   5. SearchController->go() /home/atantros/projects/spider/public/bootstrap.php:0
+[Sat Jan 29 09:34:16 2011] [error] [client 127.0.1.1] PHP Notice:  Undefined variable: type in /home/atantros/projects/spider/public/controllers/SearchController.php on line 16
+[Sat Jan 29 09:34:16 2011] [error] [client 127.0.1.1] PHP Stack trace:
+[Sat Jan 29 09:34:16 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0
+[Sat Jan 29 09:34:16 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9
+[Sat Jan 29 09:34:16 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:66
+[Sat Jan 29 09:34:16 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:51
+[Sat Jan 29 09:34:16 2011] [error] [client 127.0.1.1] PHP   5. SearchController->go() /home/atantros/projects/spider/public/bootstrap.php:0
+[Sat Jan 29 10:05:21 2011] [error] [client 127.0.1.1] PHP Notice:  Undefined variable: query in /home/atantros/projects/spider/public/controllers/SearchController.php on line 15
+[Sat Jan 29 10:05:21 2011] [error] [client 127.0.1.1] PHP Stack trace:
+[Sat Jan 29 10:05:21 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0
+[Sat Jan 29 10:05:21 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9
+[Sat Jan 29 10:05:21 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:66
+[Sat Jan 29 10:05:21 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:51
+[Sat Jan 29 10:05:21 2011] [error] [client 127.0.1.1] PHP   5. SearchController->go() /home/atantros/projects/spider/public/bootstrap.php:0
+[Sat Jan 29 10:05:21 2011] [error] [client 127.0.1.1] PHP Notice:  Undefined variable: type in /home/atantros/projects/spider/public/controllers/SearchController.php on line 16
+[Sat Jan 29 10:05:21 2011] [error] [client 127.0.1.1] PHP Stack trace:
+[Sat Jan 29 10:05:21 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0
+[Sat Jan 29 10:05:21 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9
+[Sat Jan 29 10:05:21 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:66
+[Sat Jan 29 10:05:21 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:51
+[Sat Jan 29 10:05:21 2011] [error] [client 127.0.1.1] PHP   5. SearchController->go() /home/atantros/projects/spider/public/bootstrap.php:0
+[Sat Jan 29 10:07:18 2011] [error] [client 127.0.1.1] PHP Notice:  Undefined variable: query in /home/atantros/projects/spider/public/controllers/SearchController.php on line 15
+[Sat Jan 29 10:07:18 2011] [error] [client 127.0.1.1] PHP Stack trace:
+[Sat Jan 29 10:07:18 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0
+[Sat Jan 29 10:07:18 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9
+[Sat Jan 29 10:07:18 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:66
+[Sat Jan 29 10:07:18 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:51
+[Sat Jan 29 10:07:18 2011] [error] [client 127.0.1.1] PHP   5. SearchController->go() /home/atantros/projects/spider/public/bootstrap.php:0
+[Sat Jan 29 10:07:18 2011] [error] [client 127.0.1.1] PHP Notice:  Undefined variable: type in /home/atantros/projects/spider/public/controllers/SearchController.php on line 16
+[Sat Jan 29 10:07:18 2011] [error] [client 127.0.1.1] PHP Stack trace:
+[Sat Jan 29 10:07:18 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0
+[Sat Jan 29 10:07:18 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9
+[Sat Jan 29 10:07:18 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:66
+[Sat Jan 29 10:07:18 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:51
+[Sat Jan 29 10:07:18 2011] [error] [client 127.0.1.1] PHP   5. SearchController->go() /home/atantros/projects/spider/public/bootstrap.php:0
+[Sat Jan 29 10:12:02 2011] [error] [client 127.0.1.1] PHP Notice:  Undefined variable: query in /home/atantros/projects/spider/public/controllers/SearchController.php on line 15, referer: http://spider/jsearch.html
+[Sat Jan 29 10:12:02 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/jsearch.html
+[Sat Jan 29 10:12:02 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/jsearch.html
+[Sat Jan 29 10:12:02 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/jsearch.html
+[Sat Jan 29 10:12:02 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:66, referer: http://spider/jsearch.html
+[Sat Jan 29 10:12:02 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:51, referer: http://spider/jsearch.html
+[Sat Jan 29 10:12:02 2011] [error] [client 127.0.1.1] PHP   5. SearchController->go() /home/atantros/projects/spider/public/bootstrap.php:0, referer: http://spider/jsearch.html
+[Sat Jan 29 10:12:40 2011] [error] [client 127.0.1.1] PHP Notice:  Undefined variable: query in /home/atantros/projects/spider/public/controllers/SearchController.php on line 15, referer: http://spider/jsearch.html
+[Sat Jan 29 10:12:40 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/jsearch.html
+[Sat Jan 29 10:12:40 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/jsearch.html
+[Sat Jan 29 10:12:40 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/jsearch.html
+[Sat Jan 29 10:12:40 2011] [error] [client 127.0.1.1] PHP   3. callHook() /home/atantros/projects/spider/public/bootstrap.php:66, referer: http://spider/jsearch.html
+[Sat Jan 29 10:12:40 2011] [error] [client 127.0.1.1] PHP   4. call_user_func_array() /home/atantros/projects/spider/public/bootstrap.php:51, referer: http://spider/jsearch.html
+[Sat Jan 29 10:12:40 2011] [error] [client 127.0.1.1] PHP   5. SearchController->go() /home/atantros/projects/spider/public/bootstrap.php:0, referer: http://spider/jsearch.html
+[Sat Jan 29 10:19:39 2011] [error] [client 127.0.1.1] PHP Parse error:  syntax error, unexpected T_STRING in /home/atantros/projects/spider/public/views/search/go.xml on line 1, referer: http://spider/jsearch.html
+[Sat Jan 29 10:19:39 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/jsearch.html
+[Sat Jan 29 10:19:39 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/jsearch.html
+[Sat Jan 29 10:19:39 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/jsearch.html
+[Sat Jan 29 10:19:39 2011] [error] [client 127.0.1.1] PHP   3. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0, referer: http://spider/jsearch.html
+[Sat Jan 29 10:19:39 2011] [error] [client 127.0.1.1] PHP   4. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:39, referer: http://spider/jsearch.html
+[Sat Jan 29 10:22:24 2011] [error] [client 127.0.1.1] PHP Parse error:  syntax error, unexpected T_STRING in /home/atantros/projects/spider/public/views/search/go.xml on line 1, referer: http://spider/jsearch.html
+[Sat Jan 29 10:22:24 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/jsearch.html
+[Sat Jan 29 10:22:24 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/jsearch.html
+[Sat Jan 29 10:22:24 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/jsearch.html
+[Sat Jan 29 10:22:24 2011] [error] [client 127.0.1.1] PHP   3. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0, referer: http://spider/jsearch.html
+[Sat Jan 29 10:22:24 2011] [error] [client 127.0.1.1] PHP   4. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:39, referer: http://spider/jsearch.html
+[Sat Jan 29 10:22:38 2011] [error] [client 127.0.1.1] PHP Parse error:  syntax error, unexpected T_STRING in /home/atantros/projects/spider/public/views/search/go.xml on line 1, referer: http://spider/jsearch.html
+[Sat Jan 29 10:22:38 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://spider/jsearch.html
+[Sat Jan 29 10:22:38 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/atantros/projects/spider/public/index.php:0, referer: http://spider/jsearch.html
+[Sat Jan 29 10:22:38 2011] [error] [client 127.0.1.1] PHP   2. require_once() /home/atantros/projects/spider/public/index.php:9, referer: http://spider/jsearch.html
+[Sat Jan 29 10:22:38 2011] [error] [client 127.0.1.1] PHP   3. Controller->__destruct() /home/atantros/projects/spider/public/classes/ControllerClass.php:0, referer: http://spider/jsearch.html
+[Sat Jan 29 10:22:38 2011] [error] [client 127.0.1.1] PHP   4. Template->render() /home/atantros/projects/spider/public/classes/ControllerClass.php:39, referer: http://spider/jsearch.html

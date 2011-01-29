@@ -14,10 +14,16 @@ function callHook() {
     }
     array_shift($urlArray);
     if(empty($urlArray[0])) { //if no action is defined, use the index action
-        $action = "index"; 
+        $action = "index";
+        $format = "html";
     }
     else {
-        $action = $urlArray[0];
+        $temp = explode( ".", $urlArray[0] );
+        $action = $temp[0];
+        if( !empty( $temp[1] ) )
+            $format = $temp[1];
+        else
+            $format = "html";
     }
     if (file_exists($install_lock)) {
         $controller = "install"; //load the install controller instead
@@ -40,7 +46,7 @@ function callHook() {
     //call the controller
     $model = "";
     
-    $dispatch = new $controller($model,$controllerName,$action);
+    $dispatch = new $controller($model,$controllerName,$action, $format);
     if ((int)method_exists($controller, $action)) {
         call_user_func_array(array($dispatch,$action),$queryString);
     } else {

@@ -23,7 +23,6 @@ class Search
 
     private function against_search()
     {
-        echo "doing agains";
         $query = mysql_real_escape_string( $this->keywords );
         $mysql_query = "SELECT * FROM links WHERE MATCH (title,url,content) AGAINST('$query')";
         $result = mysql_query( $mysql_query ) or die( mysql_error() );
