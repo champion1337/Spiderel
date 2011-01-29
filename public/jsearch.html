@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title>Javascript search example</title>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+    <script>
+    $(document).ready(function() {
+        $( "#go" ).bind( 'click', function() {
+            dosearch();
+        });
+    });
+
+    function dosearch()
+    {
+        searchkey = $( "#search" ).val();
+        sdata = "query=" + searchkey;
+        sdata = sdata +  '&type=against';
+        $.ajax({
+            type: "POST",
+            url: "http://spider/index.php?url=search/go.xml",
+            data: sdata,
+            success: function(msg){
+                $( "#results" ).replaceWith( msg );
+            }
+        });
+    }
+    </script>
+</head>
+<body>
+<div class="search">
+    <input type="text" name="search" id="search">
+    <input type="button" name="go" id="go" value="search">
+</div>
+
+<div id="results">
+</div>
+
+</body>
+</html>

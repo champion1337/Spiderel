@@ -1,0 +1,14 @@
+<div id="results">
+    <ul>
+    <?php
+    foreach ( $results as $result )
+    {
+    ?>
+    <li>
+        <a href="<? echo $result['url']; ?>">
+            <? echo $result['title']; ?>
+        </a>
+    </li>
+    <? } ?>
+    </ul>
+</div>
