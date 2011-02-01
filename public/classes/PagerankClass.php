@@ -22,13 +22,15 @@ class Pagerank
   }
   private function _compute_ids() {
     foreach ($this->_links as $link) { //loop all links
-      $this->_graph[$link['id']] = array();
-      foreach ($link['to'] as $to) { // loop the links pointing to
-        $to_id = $this->_get_id($to);
-        if ($to_id != false ) { //if the link is registered, add it to the new graph with it's mysql id
-          array_push($this->_graph[$link['id']],$to_id);
+        $this->_graph[$link['id']] = array();
+        if( !empty( $link['to'] ) ) {
+            foreach ($link['to'] as $to) { // loop the links pointing to
+                $to_id = $this->_get_id($to);
+                if ($to_id != false ) { //if the link is registered, add it to the new graph with it's mysql id
+                  array_push($this->_graph[$link['id']],$to_id);
+                }
+            }
         }
-      }
     }
   }
   private function _compute_pagerank($linkGraph, $dampingFactor = 0.15) {
@@ -76,7 +78,6 @@ class Pagerank
   public function calculate() {
     set_time_limit(50 );
     //print_r($this->_links);
-    echo "<br><br>";
     $this->_compute_ids();
     $pagerank = $this->_compute_pagerank($this->_graph);
     foreach ($pagerank as $key => $value) {

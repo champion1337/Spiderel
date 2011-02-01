@@ -21,12 +21,29 @@ class Controller {
             $this->set('notice',$_SESSION['notice']);
             unset($_SESSION['notice']);
         }
-
+        $this->_before();
     }
-    
+    function _before() {    
+        $action = $this->return_action();
+        $admin = "no";
+        if( $this->_action == 'login') { $admin = "yes"; }
+        if( $this->_action == 'admin') { $admin = "yes"; }
+        if( $this->_controller == 'search') { $admin = "yes"; }
+        if( $this->_controller == 'AZ') { $admin = "yes"; }
+        if ( $admin == "no" && !isset($_SESSION['admin'])) {
+            $this->redirect("spiderel","login","0");
+        }
+        
+    }
+   
     function set_format( $format )
     {
         $this->_format = $format;
+    }
+
+    function get_format()
+    {
+        return $this->_format;
     }
     function set($name,$value) {
         $this->_template->set($name,$value);

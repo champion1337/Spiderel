@@ -14,9 +14,12 @@ class HttpRequest
     private $content_type;
     public function get($url) 
     {
+        if( empty($url) ) return false;
         $parse = parse_url($url);
-        $this->host = $parse['host'];
-        $this->path = $parse['path'];
+        if( !empty( $parse[ 'host' ] ) ) { $this->host = $parse['host']; }
+        else { return false; }
+        if( !empty( $parse[ 'path' ] ) ) { $this->path = $parse['path']; }
+        else { return false; }
         if( isset( $parse['port'] ) )
         {
             $this->port = $parse['port'];
@@ -59,29 +62,66 @@ class HttpRequest
 			}
 		}
 	}
+    private function _validate_status()
+    {
+        if( $this->status == "200")
+            return true;
+        else
+        {
+            spiderel::add_invalid_response( $this->path, $this->status );
+            return false;
+        }
+    }
+
+    private function _validate_content()
+    {
+        $valid = 0;
+        if( strpos( $this->content_type, "text") !== false )
+        {
+            $valid = 1;
+        }
+        if( strpos( $this->content_type, "pdf") !== false)
+        {
+            $valid = 1;
+        }
+        if( $valid == 0 )
+        {
+            spiderel::add_invalid_content( $this->path, $this->content_type );
+            return false;
+        }
+        else return true;
+    }
+
     private function _validate()
     {
-        $fail = 0;
-		if( ($this->status != "200") ) { spiderel::add_error("Invalid http response : " . $this->status . " for " . $this->path); $fail = 1; }
-		$pos1 = strpos($this->content_type,"text");
-		if( (strpos($this->content_type,"text") === false) ) { spiderel::add_error("Invalid content type: " . $this->content_type . " for " . $this->path); $fail=1;}
-		if($fail == 1) { return false; }
-		else {return true; }
+        if(
+            $this->_validate_status() &&
+            $this->_validate_content()
+        )
+        return true;
+        else return false;
 	}
+
 	private function _get_headers() {
 		$headers = explode("\r\n",$this->header);
 		$status = explode(" ",$headers[0]);
 		$this->status = $status[1];
-		print("\r\n\r\n");
-			
 		foreach($headers as $header) {
 			$split = explode(":",$header);
 			if($split[0] == "Content-Type") {
 
 				$this->content_type = trim($split[1]);
 			}
-		}
-		
-		 
+		} 
 	}
+
+    public function get_content()
+    {
+        return $this->content;
+    }
+
+    public function get_content_type()
+    {
+        return $this->content_type;
+    }
 }

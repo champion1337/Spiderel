@@ -1,23 +1,2 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+User-agent: spiderel
+Allow: *

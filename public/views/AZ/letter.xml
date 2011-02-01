@@ -1,0 +1,16 @@
+<div id="results">
+<ul>
+<?php
+foreach($urls as $url)
+{
+?>
+  <li>
+    <a href="<?php echo $url['url']; ?>">
+        <?php echo $url['title']; ?>
+    </a>
+  </li>
+<?
+}
+?>
+</ul>
+</div>

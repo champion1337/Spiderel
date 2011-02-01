@@ -1,16 +1,11 @@
 <?php
 class SpiderelController extends Controller 
 {
-    function _before() {
-        
-        $action = $this->return_action();
-        $admin = "no";
-        if( $action == 'login') { $admin = "yes"; }
-        if( $action == 'admin') { $admin = "yes"; }
-        if ( $admin == "no" && !isset($_SESSION['admin'])) {
-            $this->redirect("spiderel","login","0");
-        }
-        
+   function cron()
+    {
+        spiderel::load_config();
+        spiderel::init();
+        spiderel::crawl();
     }
     public function crawl() {
         if(isset($_POST['start'])) { $start_url = $_POST['start']; }
@@ -34,7 +29,40 @@ class SpiderelController extends Controller
         spiderel::init();
 
         spiderel::crawl();
-        spiderel::finish();
+        $this->set( 'errors', spiderel::$error->ereturn() ) ;
+
+        $query = "SELECT COUNT(*) FROM links";
+        $result = mysql_query( $query );
+        while( $row = mysql_fetch_array( $result, MYSQL_ASSOC ) )
+        {   
+            $count_links = $row['COUNT(*)'];
+        }
+
+        $query = "SELECT COUNT(*) FROM links WHERE `type` = 'pdf'";
+        $result = mysql_query( $query );
+        while( $row = mysql_fetch_array( $result, MYSQL_ASSOC ) )
+        {
+            $pdf_links = $row['COUNT(*)'];
+        }
+        
+        $query = "SELECT * FROM links WHERE `pagerank` != 'NULL'  ORDER BY `links`.`pagerank` ASC  LIMIT 0 , 1";
+        $result = mysql_query( $query );
+        while ( $row = mysql_fetch_array( $result, MYSQL_ASSOC ) ) 
+        {
+            $min_pagerank = $row['pagerank'];
+        }
+        $query = "SELECT * FROM links WHERE `pagerank` != 'NULL'  ORDER BY `links`.`pagerank` DESC  LIMIT 0 , 1";
+        $result = mysql_query( $query );
+        while ( $row = mysql_fetch_array( $result, MYSQL_ASSOC ) ) 
+        {
+            $max_pagerank = $row['pagerank'];
+        }
+
+
+        $this->set( 'count_links', $count_links );
+        $this->set( 'pdf_links', $pdf_links );
+        $this->set( 'min_pagerank' , $min_pagerank );
+        $this->set( 'max_pagerank' , $max_pagerank );
     }
 
 

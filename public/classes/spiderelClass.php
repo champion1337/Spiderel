@@ -11,7 +11,9 @@ class spiderel
     }
     static public function init() {
         $query = "TRUNCATE TABLE `links`";
-        mysql_query($query);
+        mysql_query( $query );
+        $query = "TRUNCATE TABLE `reports`";
+        mysql_query( $query );
         $url = spiderel::get_config("url");
         $browser = spiderel::get_config("browser");
         spiderel::$error = new Error();
@@ -34,13 +36,11 @@ class spiderel
     static public function crawl() {
         $q = new Queue;
         $q->add(spiderel::get_config('url'));
-        echo "starting.... ";
         $i = 0;
         while ($q->active != "0") {
             $i++;
             $nextUrl = $q->get_next();
             if($nextUrl != false) {
-                echo "Crawling " . $nextUrl . "... <br>";
                 $page = new Page($nextUrl);
                 if ($page->status) {
             		$links = $page->get_links();
@@ -63,10 +63,10 @@ class spiderel
         return self::$config->get($key);
     }
     static public function finish() {
-          $errors = spiderel::$error->ereturn();    
-          foreach ($errors as $row) {
-            echo $row . "<br>";
-          }
+        //  $errors = spiderel::$error->ereturn();    
+        // foreach ($errors as $row) {
+        //    echo $row . "<br>";
+        //  }
     }
     static public function init_db() {
         include(ROOT . DS . "config" . DS . "mysql.php");
@@ -89,5 +89,32 @@ class spiderel
         if( $errors == 0 ) return true;
         else return false;
     }
-
+    static public function add_invalid_response( $path, $status)
+    {
+        $type = "response: " . $status;
+        $query = "INSERT INTO `spiderel`.`reports` (
+        `id` ,
+        `path` ,
+        `type`
+        )
+        VALUES (
+        NULL , '" . $path . "', '" . $type . "'
+        );";
+        mysql_query( $query ) or die( mysql_error() );
+    }
+    
+    static public function add_invalid_content( $path, $content )
+    {
+        $type = "content: " . $content;
+        $query = "INSERT INTO `spiderel`.`reports` (
+        `id` ,
+        `path` ,
+        `type`
+        )
+        VALUES (
+        NULL , '" . $path . "', '" . $type . "'
+        );";
+        mysql_query( $query ) or die( mysql_error() );
+    }
+ 
 }		

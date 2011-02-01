@@ -16,13 +16,25 @@ class AZController extends Controller
         $query = "SELECT * FROM links WHERE `title` LIKE '$letter%'";
         $result = mysql_query( $query ) or die( mysql_error() );
         if( mysql_num_rows( $result ) == 0 )
-            $this->redirect("AZ","index","0");
+        {
+            if( $this->get_format() == "xml" )
+                $this->redirect("AZ","noresult.xml","0");
+            else
+                $this->redirect( "AZ" , "index", "0");
+        }
         $urls = array();
         while( $row = mysql_fetch_array( $result, MYSQL_ASSOC ) )
         {
             array_push( $urls, $row );
         }
-        $this->set( "letter", $letter );
+        $this->set( "c_letter", $letter );
         $this->set( "urls", $urls );
+        $alphabet = str_split("ABCDEFGHIKLMNOPQRSTUVWXYZ");
+        $this->set("alphabet",$alphabet);
+ 
+    }
+    
+    function noresult()
+    {
     }
 }

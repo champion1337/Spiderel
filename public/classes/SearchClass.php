@@ -16,9 +16,7 @@ class Search
     
     function do_search()
     {
-        if( $this->stype == "normal" ) { $this->normal_search(); }
-        if( $this->stype == "against" ) { $this->against_search(); }
-        if( $this->stype == "filter1" ) { $this->filter1_search(); }
+        $this->against_search(); 
     }
 
     private function against_search()

@@ -4,7 +4,6 @@ Start url <input type="text" name="start" value="<?php echo $start; ?>" /><br />
 Path to robots.txt <input type="text" name="robots" value="<?php echo $path_robots; ?>" /><br />
 User Agent<input type="text" name="agent" value="<?php echo $agent; ?>" /><br />
 Rules<br /> <textarea name="rules" rows="5" cols="100">
-
 <?php echo $rules; ?>
 </textarea><br />
 <input type="checkbox" name="pagerank" value="yes" />Apply pagerank to scanned pages<br />

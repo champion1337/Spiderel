@@ -1,3 +1,24 @@
+a {
+color: #0772A1;
+}
+* {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 14px;
+}
+
+#header {
+    width: 90%;
+    background-color: #63AFD0;
+    color: #024A68;
+    height: 50px;
+}
+
+h1 {
+    font-family: Times New Roman, serif;
+    color: #0772A1;
+    padding: 5px;
+    font-size: 24px;
+}
 .menu { clear: right; display: block; }
 .menu ul {
     float:left;
@@ -14,19 +35,70 @@
     margin: 0px;
 }
 .menu ul li a {
-    width: 150px;
+    width: 120px;
     height: 20px;
     float:left;
     margin: auto;
     padding: 5px;
     display: block;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #A67700;
+    text-decoration: none;
+    border: 1px solid #BF9730;
+    background-color: #FFD773;
+}
+.menu ul li a:hover {
+    text-decoration: underline;
+}
+.menu ul li a:visited {
+    color: #A67700;
 }
 .content {
     display: block;
     float:left;
     clear:both;
+    width: 90%;
 }
 .footer {    display:block;
     clear: both;
 }
+#links {
+    width: 90%;
+}
+#links ul {
+    width: 100%;
+    clear:both;
+    list-style-type:none;
+}
+#links ul li div { 
+    float:left;
+    display:block;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-align: left;
+    border-bottom: 1px solid black;
+    height: 30px;
+}
+#links ul li .title {
+    width: 35%;
+    clear: left;
+}
+#links ul li .url {
+    width: 35%;
+}
+#links ul li .pagerank {
+    width: 15%;
+}
+#links ul li .type {
+    width: 15%;
+    clear:right;
+}
 
+#pagination {
+    clear: both;
+    display: block;
+    width: 90%;
+    text-align: center;
+}

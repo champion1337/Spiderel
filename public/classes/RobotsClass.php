@@ -54,7 +54,7 @@ class Robots {
 				$regex = preg_quote(trim($rule));
 				$regex = str_replace('\*','.+',$regex);
 				$regex = "#^$regex". '$' . "#i";
-				#echo $regex;
+				//echo $regex;
 				if(preg_match($regex,$path)) {
 					$isallowed = false;
 				}
@@ -63,7 +63,7 @@ class Robots {
 				$regex = preg_quote(trim($rule));
 				$regex = str_replace('\*','.+',$regex);
 				$regex = "#$regex". '$' . "#i";
-				#echo $regex;
+				//echo $regex;
 				if(preg_match($regex,$path)) {
 					$isallowed = true;
 				}
