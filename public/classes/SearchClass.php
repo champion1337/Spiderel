@@ -39,7 +39,7 @@ class Search
     private function normal_search()
     {
         $query = mysql_real_escape_string( $this->keywords );
-        $mysql_query = "SELECT `url`,`title`,`pagerank` FROM `links`  WHERE `content` LIKE '%$query%' ORDER BY `pagerank` DESC
+        $mysql_query = "SELECT * FROM `links`  WHERE `content` LIKE '%$query%' ORDER BY `pagerank` DESC
         LIMIT 0 , 30";
         $result = mysql_query( $mysql_query ) or die( mysql_error() ) ;
         while ($row = mysql_fetch_array( $result, MYSQL_ASSOC )) 

@@ -124,3 +124,13 @@ width: 30%;
 #letters a {
     font-size:16px;
 }
+#search {
+    width: 450px;
+}
+#search ul {
+list-style-type: none;
+}
+#search ul li .url {
+    color: #3BA3D0;
+    padding-bottom: 20px;
+}

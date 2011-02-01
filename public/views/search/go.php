@@ -3,15 +3,20 @@
 <input type="text" name="query"><br>
 <input type="submit" name="submit" value="cauta">
 </form>
+<div id="search">
+<ul>
 <?php
 foreach ( $results as $result ) 
 {
 ?>
-<div>
-<? echo $result['url']; ?> &nbsp;
-<a href="<? echo $result['url']; ?>"><? echo $result['title'];?></a> - 
-<? echo $result['pagerank'];?>
-</br>
-</div>
+<li>
+    <div class="title">
+        <a href="<? echo $result['url']; ?>"><? echo $result['title'];?></a> 
+    </div>
+    <div class="excerpt"><? echo $result['excerpt']; ?></div>
+    <div class="url"><? echo $result['url']; ?></div>
+</li>
 <?php
 } ?>
+</ul>
+</div>
