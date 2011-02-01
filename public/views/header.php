@@ -10,9 +10,9 @@
 <div class="menu">
     <ul>
         <li><a href="index.php">Index</a></li>
-        <li><a href="index.php?url=report">Report</a></li>
+        <li><a href="index.php?url=report">Reports</a></li>
         <li><a href="index.php?url=generate">Generate Code</a></li>
-        <li><a href="index.php?url=search">Do a search</a></li>
+        <li><a href="index.php?url=search">Search</a></li>
         <li><a href="index.php?url=AZ">A-Z</a></li>
         <li><a href="index.php?url=spiderel/logout">Logout</a></li>
     </ul>

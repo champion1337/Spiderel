@@ -1,4 +1,4 @@
-
+<h2>Generate AJAX code for easy integration</h2>
 Ajax search code </br>
 <textarea>
 <?php $code ='<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>

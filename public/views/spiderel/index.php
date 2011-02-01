@@ -6,9 +6,9 @@ User Agent<input type="text" name="agent" value="<?php echo $agent; ?>" /><br />
 Rules<br /> <textarea name="rules" rows="5" cols="100">
 <?php echo $rules; ?>
 </textarea><br />
-<input type="checkbox" name="pagerank" value="yes" />Apply pagerank to scanned pages<br />
-<input type="checkbox" name="cron" value="yes" />Save configuration for cron job<br />
-<input type="checkbox" name="subdomains" value="yes" />Follow subdomains<br />
+<input checked type="checkbox" name="pagerank" value="yes" />Apply pagerank to scanned pages<br />
+<input checked type="checkbox" name="cron" value="yes" />Save configuration for cron job<br />
+<input checked type="checkbox" name="subdomains" value="yes" />Follow subdomains<br />
 
 <input type="submit" value="Start" name="submit" />
 </form>

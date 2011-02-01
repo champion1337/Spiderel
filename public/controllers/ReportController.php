@@ -35,4 +35,15 @@ class ReportController extends Controller
         $this->set( "links", $links );
         $this->set( "current_page", $current_page);
     }
+    function invalid()
+    {
+        $query =  "SELECT * FROM reports WHERE 1";
+        $result = mysql_query( $query ) or die( mysql_error() );
+        $reports = array();
+        while( $row = mysql_fetch_array( $result, MYSQL_ASSOC ) )
+        {
+            array_push( $reports, $row );
+        }
+        $this->set( "reports", $reports );
+    }
 }

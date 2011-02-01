@@ -1,4 +1,5 @@
-
+<h2>Valid URLs</h2>
+<div style="text-align: center"><a href="index.php?url=report/invalid">Invalid URL's</a></div></br>
 <div id="pagination">
 <?php
 for( $i = 1;$i <= $total_pages; $i++)

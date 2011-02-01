@@ -12,7 +12,11 @@ font-size: 14px;
     color: #024A68;
     height: 50px;
 }
-
+#footer {
+    display:block;
+    clear:both;
+    padding-top:40px;
+}
 h1 {
     font-family: Times New Roman, serif;
     color: #0772A1;
@@ -60,16 +64,15 @@ h1 {
     clear:both;
     width: 90%;
 }
-.footer {    display:block;
-    clear: both;
-}
 #links {
     width: 90%;
+    float:left;
 }
 #links ul {
     width: 100%;
     clear:both;
     list-style-type:none;
+    float:left;
 }
 #links ul li div { 
     float:left;
@@ -78,12 +81,14 @@ h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     text-align: left;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid gray;
     height: 30px;
 }
 #links ul li .title {
-    width: 35%;
+    width: 45%;
     clear: left;
+    margin-top: 5px;
+    height: 25px;
 }
 #links ul li .url {
     width: 35%;
@@ -92,7 +97,7 @@ h1 {
     width: 15%;
 }
 #links ul li .type {
-    width: 15%;
+    width: 5%;
     clear:right;
 }
 
@@ -101,4 +106,21 @@ h1 {
     display: block;
     width: 90%;
     text-align: center;
+}
+#reports {
+width: 90%;
+float: left;
+}
+#reports .path {
+float:left;
+clear: left;
+width: 60%;
+}
+#reports .invalid {
+float: left;
+clear: right;
+width: 30%;
+}
+#letters a {
+    font-size:16px;
 }
