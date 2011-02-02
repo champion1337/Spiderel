@@ -26,6 +26,7 @@ class Controller {
     function _before() {    
         $action = $this->return_action();
         $admin = "no";
+        if( $this->_controller == 'install' ) { $admin = "yes"; }
         if( $this->_action == 'login') { $admin = "yes"; }
         if( $this->_action == 'admin') { $admin = "yes"; }
         if( $this->_controller == 'search') { $admin = "yes"; }
