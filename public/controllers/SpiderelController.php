@@ -32,27 +32,27 @@ class SpiderelController extends Controller
         $this->set( 'errors', spiderel::$error->ereturn() ) ;
 
         $query = "SELECT COUNT(*) FROM links";
-        $result = mysql_query( $query );
+        $result = mysql_query( $query ) or die( mysql_error());
         while( $row = mysql_fetch_array( $result, MYSQL_ASSOC ) )
         {   
             $count_links = $row['COUNT(*)'];
         }
 
         $query = "SELECT COUNT(*) FROM links WHERE `type` = 'pdf'";
-        $result = mysql_query( $query );
+        $result = mysql_query( $query ) or die( mysql_error()) ;
         while( $row = mysql_fetch_array( $result, MYSQL_ASSOC ) )
         {
             $pdf_links = $row['COUNT(*)'];
         }
         
         $query = "SELECT * FROM links WHERE `pagerank` != 'NULL'  ORDER BY `links`.`pagerank` ASC  LIMIT 0 , 1";
-        $result = mysql_query( $query );
+        $result = mysql_query( $query ) or die( mysql_error() );
         while ( $row = mysql_fetch_array( $result, MYSQL_ASSOC ) ) 
         {
             $min_pagerank = $row['pagerank'];
         }
         $query = "SELECT * FROM links WHERE `pagerank` != 'NULL'  ORDER BY `links`.`pagerank` DESC  LIMIT 0 , 1";
-        $result = mysql_query( $query );
+        $result = mysql_query( $query ) or die( mysql_error() );
         while ( $row = mysql_fetch_array( $result, MYSQL_ASSOC ) ) 
         {
             $max_pagerank = $row['pagerank'];

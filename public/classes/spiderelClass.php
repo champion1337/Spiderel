@@ -11,11 +11,11 @@ class spiderel
     }
     static public function init() {
         $query = "TRUNCATE TABLE `links`";
-        mysql_query( $query );
+        mysql_query( $query ) or die(mysql_error());
         $query = "TRUNCATE TABLE `reports`";
-        mysql_query( $query );
+        mysql_query( $query ) or die(mysql_error());
         $url = spiderel::get_config("url");
-        $browser = spiderel::get_config("browser");
+        $browser = spiderel::get_config("agent");
         spiderel::$error = new Error();
         spiderel::$robots = new Robots();
         spiderel::$pagerank = new Pagerank;

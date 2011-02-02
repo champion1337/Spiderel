@@ -130,7 +130,7 @@ class Page {
     }
     public function add_to_db() {
         $query = " 
-        INSERT INTO `spiderel`.`links` (
+        INSERT INTO `links` (
         `url` ,
         `title` ,
         `content`,
@@ -141,7 +141,7 @@ class Page {
         );
         ";
         mysql_query($query) or spiderel::add_error("failed to execute query " . $query . " ! the mysql server returned " . mysql_error() . " .i ");
-        $query = "SELECT * from `spiderel`.`links` WHERE url='" . $this->url . "'"; 
+        $query = "SELECT * from `links` WHERE url='" . $this->url . "'"; 
         $result = mysql_query($query) or spiderel::add_error("failed to execute query " . $query . " ! the mysql server returned " . mysql_error() . " .i ");
         $row = mysql_fetch_array($result);
         $this->_id = $row['id'];
