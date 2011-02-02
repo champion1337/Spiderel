@@ -35,6 +35,7 @@ class InstallController extends Controller
             $mysql_data .= '$mysql_database = "' . $database . '";
             ';
             fwrite($f, $mysql_data); //write config/mysql.php
+            fclose( $f );
             spiderel::init_db();
             if (!spiderel::create_tables()) {
                 $this->add_notice("Unable to create tables");

@@ -86,8 +86,7 @@ class spiderel
         {
             mysql_query($query) or $errors = 1;;
         }
-        if( $errors == 0 ) return true;
-        else return false;
+        return true;
     }
     static public function add_invalid_response( $path, $status)
     {
