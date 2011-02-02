@@ -91,7 +91,7 @@ class spiderel
     static public function add_invalid_response( $path, $status)
     {
         $type = "response: " . $status;
-        $query = "INSERT INTO `spiderel`.`reports` (
+        $query = "INSERT INTO `reports` (
         `id` ,
         `path` ,
         `type`
@@ -105,7 +105,7 @@ class spiderel
     static public function add_invalid_content( $path, $content )
     {
         $type = "content: " . $content;
-        $query = "INSERT INTO `spiderel`.`reports` (
+        $query = "INSERT INTO `reports` (
         `id` ,
         `path` ,
         `type`
