@@ -46,14 +46,27 @@ class HttpRequest
         	$message .=  $this->get; 
             fputs($fp, $message);
             $d = "";
-		    while(!feof($fp)) $d .= fgets($fp,4096);
-		    fclose($fp); 
-            $result = explode("\r\n\r\n", $d, 2);
-            $this->header = isset($result[0]) ? $result[0] : '';
-            $this->content = isset($result[1]) ? $result[1] : '';
-            $this->content = strstr($this->content,"<");
+            for( $i = 1; $i <= 20; $i++)
+            {
+                if( !feof( $fp ) )
+                {
+                    $d .= fgets( $fp, 4096 );
+                }
+            }
+            $tresult = explode( "\r\n\r\n", $d ,2 );
+            $this->header = isset( $tresult[0] ) ? $tresult[0] : "";
             $this->_get_headers();
-            if($this->_validate()) return true;
+            if( $this->_validate_content() )
+            {
+        	    while(!feof($fp)) $d .= fgets($fp,4096);
+    		    fclose($fp); 
+                $result = explode("\r\n\r\n", $d, 2);
+                $this->content = isset($result[1]) ? $result[1] : '';
+                $this->content = strstr($this->content,"<");
+                $this->_get_headers();
+            }
+            if($this->_validate())
+                    return true;
             else
             {
                 
