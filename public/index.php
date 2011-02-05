@@ -2,6 +2,8 @@
 define('DS', DIRECTORY_SEPARATOR);
 define('ROOT', dirname(__FILE__));
 
+set_time_limit( 600 );
+date_timezone_set("Europe/Helsinki");
 if(isset($_GET['url'])) {  $url = $_GET['url']; }
 
 error_reporting(E_ALL);
