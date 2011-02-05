@@ -150,7 +150,9 @@ class Page {
 
     private function _identify_url($url,$base_url,$current_url) {
         //identify the URL base that needs to be followed relative to subdomain/directories
-        if( strpos( $url, "/") == "0" )
+
+
+        if( strpos( $url, "/") === 0 )
         {
             $url = substr( $url, 1 );
             return $base_url . $url;
